@@ -1,0 +1,74 @@
+{
+  "name": "demandsdue",
+  "plural": "demandsdue",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "accnumber": {
+      "type": "string"
+    },
+    "client_name": {
+      "type": "string"
+    },
+    "section": {
+      "type": "string"
+    },
+    "oustbalance": {
+      "type": "number"
+    },
+    "totalarrears": {
+      "type": "number"
+    },
+    "daysinarr": {
+      "type": "number"
+    },
+    "address": {
+      "type": "string"
+    },
+    "postalcode": {
+      "type": "string"
+    },
+    "telnumber": {
+      "type": "string"
+    },
+    "emailaddress": {
+      "type": "string"
+    },
+    "datedue": {
+      "type": "date"
+    },
+    "datesent": {
+      "type": "date"
+    },
+    "demandletter": {
+      "type": "string"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "default": "PENDING"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "guarantors": {
+      "type": "hasMany",
+      "model": "guarantors",
+      "foreignKey": "accnumber"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

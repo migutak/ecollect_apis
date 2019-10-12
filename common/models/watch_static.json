@@ -1,0 +1,50 @@
+{
+  "name": "watch_static",
+  "plural": "watch_static",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "allocateflagdate": {
+      "type": "string"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "allocateflag": {
+      "type": "string"
+    },
+    "section": {
+      "type": "string"
+    },
+    "excuse": {
+      "type": "string"
+    },
+    "routetostate": {
+      "type": "string"
+    },
+    "lastactiondate": {
+      "type": "string"
+    },
+    "cmdstatus": {
+      "type": "string"
+    },
+    "rfdother": {
+      "type": "string"
+    },
+    "reviewdate": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

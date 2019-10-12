@@ -1,0 +1,48 @@
+{
+  "name": "ptps",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "ptpamount": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "met": {
+      "type": "string"
+    },
+    "paymentdate": {
+      "type": "string"
+    },
+    "arramount": {
+      "type": "number"
+    },
+    "ptpdate": {
+      "type": "string"
+    },
+    "paymethod": {
+      "type": "string"
+    },
+    "actiondate": {
+      "type": "date"
+    },
+    "owner": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

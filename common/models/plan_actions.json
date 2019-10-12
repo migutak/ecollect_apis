@@ -1,0 +1,51 @@
+{
+  "name": "plan_actions",
+  "plural": "plan_actions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custnumber": {
+      "type": "number"
+    },
+    "actionagreed": {
+      "type": "string"
+    },
+    "initiationdate": {
+      "type": "string"
+    },
+    "nextreview": {
+      "type": "string"
+    },
+    "attachment": {
+      "type": "string"
+    },
+    "rcomment": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "dateupdated": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "string",
+      "default": "N"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,44 @@
+{
+  "name": "plan_background",
+  "plural": "plan_background",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "background": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "dateupdated": {
+      "type": "date"
+    },
+    "deleted": {
+      "type": "string",
+      "default": "N"
+    },
+    "curren": {
+      "type": "string",
+      "default": "N"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "tbl_smstemplate",
+  "plural": "tbl_smstemplate",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "message": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "createdate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

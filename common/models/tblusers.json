@@ -1,0 +1,84 @@
+{
+  "name": "tblusers",
+  "plural": "tblusers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "username": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "active": {
+      "type": "string",
+      "default": "Y"
+    },
+    "onleave": {
+      "type": "string"
+    },
+    "createdate": {
+      "type": "date"
+    },
+    "accessrights": {
+      "type": "string",
+      "default": "user"
+    },
+    "isteamleader": {
+      "type": "string"
+    },
+    "manager": {
+      "type": "string"
+    },
+    "division": {
+      "type": "string",
+      "default": "CMD"
+    },
+    "dateloglast": {
+      "type": "date"
+    },
+    "loggedin": {
+      "type": "string",
+      "default": "N"
+    },
+    "loked": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "expirydate": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "branch": {
+      "type": "string"
+    },
+    "vonline": {
+      "type": "string"
+    },
+    "telecollector": {
+      "type": "string"
+    },
+    "team": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "excuse",
+  "plural": "excuse",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "excuseid": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "excuse": {
+      "type": "string",
+      "required": true
+    },
+    "active": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

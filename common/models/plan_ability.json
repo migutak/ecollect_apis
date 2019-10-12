@@ -1,0 +1,45 @@
+{
+  "name": "plan_ability",
+  "plural": "plan_ability",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "planid": {
+      "type": "string",
+      "required": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "accnumber": {
+      "type": "string"
+    },
+    "abilitytopay": {
+      "type": "string"
+    },
+    "willingtopay": {
+      "type": "string",
+      "default": "N"
+    },
+    "dateupdated": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "string"
+    },
+    "curren": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

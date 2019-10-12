@@ -1,0 +1,12 @@
+{
+  "oracle": {
+    "host": "127.0.0.1",
+    "port": 1521,
+    "database": "ORCLCDB.localdomain",
+    "password": "ecol",
+    "name": "oracle",
+    "tns": "",
+    "user": "ecol",
+    "connector": "oracle"
+  }
+}

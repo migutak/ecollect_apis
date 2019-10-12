@@ -1,0 +1,62 @@
+{
+  "name": "customersuspensions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "custnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "demand1": {
+      "type": "string",
+      "required": false
+    },
+    "demand2": {
+      "type": "string"
+    },
+    "prelisting": {
+      "type": "string"
+    },
+    "postlistingsecured": {
+      "type": "string"
+    },
+    "postlistingunsecured": {
+      "type": "string"
+    },
+    "day90": {
+      "type": "string"
+    },
+    "day40": {
+      "type": "string"
+    },
+    "day30": {
+      "type": "string"
+    },
+    "prelistingremedial": {
+      "type": "string"
+    },
+    "overduecc": {
+      "type": "string"
+    },
+    "prelistingcc": {
+      "type": "string"
+    },
+    "suspension": {
+      "type": "string"
+    },
+    "postlistingunsecuredcc": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

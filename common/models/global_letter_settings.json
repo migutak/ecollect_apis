@@ -1,0 +1,29 @@
+{
+  "name": "global_letter_settings",
+  "plural": "global_letter_settings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "company": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "footer": {
+      "type": "string"
+    },
+    "directors": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

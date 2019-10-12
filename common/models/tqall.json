@@ -1,0 +1,175 @@
+{
+  "name": "tqall",
+  "plural": "tqall",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "client_name": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "origdate": {
+      "type": "string"
+    },
+    "origbalance": {
+      "type": "string"
+    },
+    "oustbalance": {
+      "type": "number"
+    },
+    "productcode": {
+      "type": "string"
+    },
+    "daysinarr": {
+      "type": "number"
+    },
+    "instamount": {
+      "type": "number"
+    },
+    "intratearr": {
+      "type": "number"
+    },
+    "princarrears": {
+      "type": "number"
+    },
+    "intarrears": {
+      "type": "string"
+    },
+    "totalarrears": {
+      "type": "number"
+    },
+    "limitamount": {
+      "type": "string"
+    },
+    "templimit": {
+      "type": "string"
+    },
+    "templimitexpirydate": {
+      "type": "string"
+    },
+    "limitexpirydate": {
+      "type": "string"
+    },
+    "bucket": {
+      "type": "string"
+    },
+    "lastcredamnt": {
+      "type": "string"
+    },
+    "lastcreddate": {
+      "type": "string"
+    },
+    "nextrepaydate": {
+      "type": "string"
+    },
+    "branchcode": {
+      "type": "string"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "section": {
+      "type": "string"
+    },
+    "addressline1": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "celnumber": {
+      "type": "string"
+    },
+    "telnumber": {
+      "type": "string"
+    },
+    "nationid": {
+      "type": "string"
+    },
+    "streetaddress": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "emailaddress": {
+      "type": "string"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "branchname": {
+      "type": "string"
+    },
+    "reviewdate": {
+      "type": "date"
+    },
+    "routetostate": {
+      "type": "string"
+    },
+    "excuse": {
+      "type": "string"
+    },
+    "branchstatus": {
+      "type": "string"
+    },
+    "cmdstatus": {
+      "type": "string"
+    },
+    "manager": {
+      "type": "string"
+    },
+    "fileno": {
+      "type": "string"
+    },
+    "settleaccno": {
+      "type": "string"
+    },
+    "settleaccbal": {
+      "type": "number"
+    },
+    "kbrr": {
+      "type": "number"
+    },
+    "debitaccruedintrate": {
+      "type": "number"
+    },
+    "debitaccruedintamount": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "guarantors": {
+      "type": "hasMany",
+      "model": "guarantordetails",
+      "foreignKey": "accnumber"
+    },
+    "demandsdues": {
+      "type": "hasMany",
+      "model": "demandsdue",
+      "foreignKey": "accnumber"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

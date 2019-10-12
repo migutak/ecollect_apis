@@ -1,0 +1,32 @@
+{
+  "name": "tbl_s_plan_actions",
+  "plural": "tbl_s_plan_actions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "planid": {
+      "type": "string"
+    },
+    "actionid": {
+      "type": "string"
+    },
+    "actiontitle": {
+      "type": "string"
+    },
+    "updateby": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

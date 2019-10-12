@@ -1,0 +1,126 @@
+{
+  "name": "qcards",
+  "plural": "qcards",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cardnumber": {
+      "type": "string",
+      "id": true,
+      "required": "true"
+    },
+    "accountno": {
+      "type": "string",
+      "required": true
+    },
+    "accountstatus": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "ageinmonths": {
+      "type": "number"
+    },
+    "colofficer": {
+      "type": "number"
+    },
+    "excuse": {
+      "type": "string",
+      "required": true
+    },
+    "cardname": {
+      "type": "string"
+    },
+    "cardacct": {
+      "type": "string"
+    },
+    "cardstatus": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "cycle": {
+      "type": "string"
+    },
+    "datedisbursed": {
+      "type": "string"
+    },
+    "datesuspended": {
+      "type": "string"
+    },
+    "daysinarrears": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "duedate": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "exppmnt": {
+      "type": "string"
+    },
+    "reviewdate": {
+      "type": "string"
+    },
+    "lastpaymentdate": {
+      "type": "string"
+    },
+    "limit": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "nationid": {
+      "type": "string"
+    },
+    "outbalance": {
+      "type": "number"
+    },
+    "payment": {
+      "type": "string"
+    },
+    "prevdebt": {
+      "type": "string"
+    },
+    "rpcode": {
+      "type": "string"
+    },
+    "cmdstatus": {
+      "type": "date"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "employer": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tblcard_static": {
+      "type": "hasOne",
+      "model": "tblcard_static",
+      "foreignKey": "cardnumber",
+      "primaryKey": "cardnumber"
+    },
+    "guarantordetails": {
+      "type": "hasMany",
+      "model": "guarantordetails",
+      "foreignKey": "accnumber",
+      "primaryKey": "cardnumber"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

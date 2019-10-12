@@ -1,0 +1,235 @@
+{
+  "name": "activitylog",
+  "plural": "activitylog",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false,
+      "oracle": {
+        "columnName": "ID",
+        "dataType": "NUMBER",
+        "dataLength": 40,
+        "nullable": "N"
+      }
+    },
+    "accountnumber": {
+      "type": "string",
+      "required": false,
+      "oracle": {
+        "columnName": "ACCOUNTNUMBER",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "N"
+      }
+    },
+    "custnumber": {
+      "type": "string",
+      "oracle": {
+        "columnName": "CUSTNUMBER",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "N"
+      }
+    },
+    "collectoraction": {
+      "type": "string",
+      "oracle": {
+        "columnName": "ACTION",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "cure": {
+      "type": "string",
+      "oracle": {
+        "columnName": "CURING",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "party": {
+      "type": "string",
+      "oracle": {
+        "columnName": "PARTY",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "ptpamount": {
+      "type": "number",
+      "oracle": {
+        "columnName": "PROMISEAMOUNT",
+        "dataType": "FLOAT",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "ptp": {
+      "type": "string",
+      "default": "N",
+      "PTP": {
+        "columnName": "NAME",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "ptpdate": {
+      "type": "date",
+      "oracle": {
+        "columnName": "PROMISEDATE",
+        "dataType": "DATE",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "collectornote": {
+      "type": "string",
+      "oracle": {
+        "columnName": "NOTEMADE",
+        "dataType": "VARCHAR2",
+        "dataLength": 2000,
+        "nullable": "Y"
+      }
+    },
+    "reviewdate": {
+      "type": "date",
+      "oracle": {
+        "columnName": "REVIEWDATE",
+        "dataType": "DATE",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "reason": {
+      "type": "string",
+      "oracle": {
+        "columnName": "REASON",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "cmdstatus": {
+      "type": "string",
+      "oracle": {
+        "columnName": "CMDSTATUS",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "branchstatus": {
+      "type": "string",
+      "oracle": {
+        "columnName": "BRANCHSTATUS",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "route": {
+      "type": "string",
+      "oracle": {
+        "columnName": "ROUTE",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "paymode": {
+      "type": "string",
+      "oracle": {
+        "columnName": "PAYMODE",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "noteimp": {
+      "type": "string",
+      "oracle": {
+        "columnName": "NOTEIMP",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "notesrc": {
+      "type": "string",
+      "oracle": {
+        "columnName": "NOTESRC",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "rfdother": {
+      "type": "string",
+      "oracle": {
+        "columnName": "RFDOTHER",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "owner": {
+      "type": "string",
+      "oracle": {
+        "columnName": "OWNER",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "arramount": {
+      "type": "number",
+      "oracle": {
+        "columnName": "ARRAMOUNT",
+        "dataType": "FLOAT",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "oustamount": {
+      "type": "number",
+      "oracle": {
+        "columnName": "OUSTAMOUNT",
+        "dataType": "FLOAT",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "actiondate": {
+      "type": "date",
+      "oracle": {
+        "columnName": "ACTIONDATE",
+        "dataType": "DATE",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "product": {
+      "type": "string",
+      "oracle": {
+        "columnName": "PRODUCT",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

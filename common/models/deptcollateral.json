@@ -1,0 +1,55 @@
+{
+  "name": "deptcollateral",
+  "plural": "deptcollateral",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "collateralname": {
+      "type": "string"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "forcedsale": {
+      "type": "number"
+    },
+    "insurancevalue": {
+      "type": "number"
+    },
+    "marketvalue": {
+      "type": "number"
+    },
+    "regowner": {
+      "type": "string"
+    },
+    "tenure": {
+      "type": "string"
+    },
+    "valuationdate": {
+      "type": "string"
+    },
+    "valuer": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

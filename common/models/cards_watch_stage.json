@@ -1,0 +1,117 @@
+{
+  "name": "cards_watch_stage",
+  "plural": "cards_watch_stage",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cardnumber": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "oracle": {
+        "columnName": "CARDNUMBER",
+        "dataType": "VARCHAR",
+        "dataLength": 40,
+        "nullable": "N"
+      }
+    },
+    "accountno": {
+      "type": "string",
+      "required": false
+    },
+    "cardacct": {
+      "type": "string"
+    },
+    "cardname": {
+      "type": "string"
+    },
+    "sqnumber": {
+      "type": "number"
+    },
+    "exppmnt": {
+      "type": "number"
+    },
+    "limit": {
+      "type": "number"
+    },
+    "prevdebt": {
+      "type": "number"
+    },
+    "cycle": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "fax": {
+      "type": "string"
+    },
+    "ageinmonths": {
+      "type": "number"
+    },
+    "daysinarrears": {
+      "type": "number"
+    },
+    "lastpaymentdate": {
+      "type": "string"
+    },
+    "payment": {
+      "type": "string"
+    },
+    "datedisbursed": {
+      "type": "string"
+    },
+    "datesuspended": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "string"
+    },
+    "rpcode": {
+      "type": "string"
+    },
+    "basesupp": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "nationid": {
+      "type": "string"
+    },
+    "outbalance": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "cards_watch_statics": {
+      "type": "hasOne",
+      "model": "cards_watch_static",
+      "foreignKey": "cardacct"
+    }
+  },
+  "scope": { 
+    "include": ["cards_watch_statics"]
+},
+  "acls": [],
+  "methods": {}
+}

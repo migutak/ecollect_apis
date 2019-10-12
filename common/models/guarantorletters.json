@@ -1,0 +1,65 @@
+{
+  "name": "guarantorletters",
+  "plural": "guarantorletters",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "idnumber": {
+      "type": "string",
+      "required": true
+    },
+    "guarantorsname": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "telnumber": {
+      "type": "string"
+    },
+    "datesent": {
+      "type": "date"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "byemail": {
+      "type": "string"
+    },
+    "byphysical": {
+      "type": "string"
+    },
+    "bypost": {
+      "type": "string"
+    },
+    "filepath": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

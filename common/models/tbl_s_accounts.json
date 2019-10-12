@@ -1,0 +1,29 @@
+{
+  "name": "tbl_s_accounts",
+  "plural": "tbl_s_accounts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "planid": {
+      "type": "string"
+    },
+    "dateupdated": {
+      "type": "string"
+    },
+    "updateby": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

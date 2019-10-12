@@ -1,0 +1,26 @@
+{
+  "name": "tbl_s_actions",
+  "plural": "tbl_s_actions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "actionid": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "actiontitle": {
+      "type": "string"
+    },
+    "updateby": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

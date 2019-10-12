@@ -1,0 +1,28 @@
+{
+  "name": "collectoraction",
+  "plural": "collectoraction",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "collectoractionid": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "collectoraction": {
+      "type": "string",
+      "required": true
+    },
+    "active": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

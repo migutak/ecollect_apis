@@ -1,0 +1,40 @@
+{
+  "name": "autoletters",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "letterid": {
+      "type": "string",
+      "required": true
+    },
+    "memogroup": {
+      "type": "string",
+      "required": true
+    },
+    "daysinarr": {
+      "type": "number",
+      "required": true
+    },
+    "lastupdateby": {
+      "type": "string"
+    },
+    "lastupdate": {
+      "type": "date"
+    },
+    "active": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

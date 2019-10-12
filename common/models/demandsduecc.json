@@ -1,0 +1,85 @@
+{
+  "name": "demandsduecc",
+  "plural": "demandsduecc",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "cardacct": {
+      "type": "string",
+      "required": true
+    },
+    "cardnumber": {
+      "type": "number"
+    },
+    "cardname": {
+      "type": "string"
+    },
+    "accountno": {
+      "type": "string"
+    },
+    "nationid": {
+      "type": "string"
+    },
+    "exppmnt": {
+      "type": "number",
+      "required": false
+    },
+    "limit": {
+      "type": "number"
+    },
+    "outbalance": {
+      "type": "number"
+    },
+    "daysinarrears": {
+      "type": "number"
+    },
+    "city": {
+      "type": "string"
+    },
+    "rpcode": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "number"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "emailaddress": {
+      "type": "string"
+    },
+    "cardstatus": {
+      "type": "string"
+    },
+    "datedue": {
+      "type": "date"
+    },
+    "datesent": {
+      "type": "date"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "demandletter": {
+      "type": "string"
+    },
+    "destpath": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
