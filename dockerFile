@@ -1,4 +1,4 @@
-FROM oraclelinux:7-slim
+FROM oraclelinux:7-slim AS appbuild
 
 ADD oracle-instantclient*.rpm /tmp/
 
@@ -20,6 +20,17 @@ RUN mkdir -p /app/ecollect_apis
 COPY . /app/ecollect_apis
 WORKDIR /app/ecollect_apis
 RUN npm install
+
+
+# Build Stage 2
+# This build takes the production build from staging build
+#
+FROM node:10.15.2-alpine
+WORKDIR /usr/src/app
+COPY package.json ./
+COPY .babelrc ./
+RUN npm install
+COPY --from=appbuild /usr/src/app/dist ./dist
 EXPOSE 8000
 
 CMD ["pm2-runtime", "ecosystem.config.js"]
