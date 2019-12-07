@@ -39,6 +39,9 @@
     },
     "owner": {
       "type": "string"
+    },
+    "ammended": {
+      "type": "string"
     }
   },
   "validations": [],

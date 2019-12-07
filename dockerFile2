@@ -1,23 +1,25 @@
-FROM oraclelinux:7-slim AS appbuild
+# FROM oraclelinux:7-slim AS appbuild
+FROM migutak/oracledb:latest
 
 # Create app directory
 WORKDIR /usr/src/ecollect_apis
 
 COPY . .
 
-RUN yum update -y && \
-  yum install -y oracle-release-el7 && \
-  yum install -y oracle-nodejs-release-el7 && \
-  yum install -y --disablerepo=ol7_developer_EPEL nodejs && \
-  yum install -y oracle-instantclient19.3-basic.x86_64 && \
-  yum clean all && \
-  node --version && \
-  npm --version && \
-  npm install && \
-  echo Installed
+#RUN yum update -y && \
+  #yum install -y oracle-release-el7 && \
+  #yum install -y oracle-nodejs-release-el7 && \
+  #yum install -y --disablerepo=ol7_developer_EPEL nodejs && \
+  #yum install -y oracle-instantclient19.3-basic.x86_64 && \
+  #yum clean all && \
+  #node --version && \
+  #npm --version && \
+  #npm install && \
+  #echo Installed
 
 EXPOSE 8000
 CMD ["node", "server/server.js"]
 
 
 # docker build -t migutak/ecollect_apis:1.0.0 -f dockerfile2 . 
+# docker save -o migutak_ecollect_apis.tar migutak/ecollect_apis:1.0.0

@@ -226,6 +226,24 @@
         "dataLength": 40,
         "nullable": "Y"
       }
+    },
+    "ptpsms": {
+      "type": "string",
+      "oracle": {
+        "columnName": "PTPSMS",
+        "dataType": "VARCHAR2",
+        "dataLength": 100,
+        "nullable": "Y"
+      }
+    },
+    "ptpsmsnumber": {
+      "type": "string",
+      "oracle": {
+        "columnName": "PTPSMSNUMBER",
+        "dataType": "VARCHAR2",
+        "dataLength": 100,
+        "nullable": "Y"
+      }
     }
   },
   "validations": [],
