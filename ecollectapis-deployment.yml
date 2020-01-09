@@ -1,3 +1,19 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ecollectapis-service
+spec:
+  selector:
+    app: ecollectapis
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+      nodePort: 30010
+  type: NodePort
+
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -28,15 +44,30 @@ spec:
         imagePullPolicy: IfNotPresent
         env:
         - name: DB_HOST
-          value: "192.168.0.12"
+          valueFrom:
+            configMapKeyRef:
+              name: ecolconfigmap
+              key: host
         - name: DB_PORT
-          value: "1521"
-        - name: DB_USER
-          value: "ecol"
-        - name: DB_PASSWORD
-          value: "ecol"
+          valueFrom:
+            configMapKeyRef:
+              name: ecolconfigmap
+              key: port
         - name: DB_DATABASE
-          value: "ORCLCDB.localdomain"
+          valueFrom:
+            configMapKeyRef:
+              name: ecolconfigmap
+              key: database
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: ecolsecret
+              key: username
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: ecolsecret
+              key: dbpassword
         resources:
           requests:
             memory: "2Gi"
@@ -44,17 +75,4 @@ spec:
           limits:
             memory: "4Gi"
             cpu: "500m"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: ecollectapis-service
-spec:
-  selector:
-    app: ecollectapis
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8000
-      nodePort: 30010
-  type: NodePort
+

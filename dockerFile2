@@ -22,4 +22,5 @@ CMD ["node", "server/server.js"]
 
 
 # docker build -t migutak/ecollect_apis:1.0.0 -f dockerfile2 . 
+# docker push migutak/ecollect_apis:1.0.0
 # docker save -o migutak_ecollect_apis.tar migutak/ecollect_apis:1.0.0
