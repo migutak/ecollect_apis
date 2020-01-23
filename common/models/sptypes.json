@@ -1,45 +1,44 @@
 {
-  "name": "plan_ptpplans",
-  "plural": "plan_ptpplans",
+  "name": "sptypes",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "number",
+    "SPTITLE": {
+      "type": "string",
       "id": true
     },
-    "no_of_frequency": {
+    "CONTACTPERSON": {
       "type": "string",
       "required": true
     },
-    "accnumber": {
+    "TELEPHONE": {
       "type": "string",
-      "required": true
+      "required": false
     },
-    "custnumber": {
+    "SPCODE": {
       "type": "string"
     },
-    "ptpamount": {
-      "type": "number"
-    },
-    "ptpstartdate": {
+    "STARTDATE": {
       "type": "string"
     },
-    "ptpfreq": {
+    "ACCNUMBER": {
       "type": "string"
     },
-    "owner": {
+    "COVERAGE": {
       "type": "string"
     },
-    "dateupdated": {
-      "type": "string"
-    },
-    "ptpmet": {
+    "ADDRESS": {
       "type": "string",
       "default": "N"
+    },
+    "ENDOFINDEMNITY": {
+      "type": "string"
+    },
+    "EMAIL": {
+      "type": "string"
     }
   },
   "validations": [],

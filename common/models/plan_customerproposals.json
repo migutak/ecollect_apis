@@ -12,6 +12,10 @@
       "id": true,
       "required": false
     },
+    "planid": {
+      "type": "string",
+      "required": true
+    },
     "custnumber": {
       "type": "string"
     },

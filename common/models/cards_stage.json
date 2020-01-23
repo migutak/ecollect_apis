@@ -107,9 +107,6 @@
     },
     "tel": {
       "type": "string"
-    },
-    "title": {
-      "type": "string"
     }
   },
   "validations": [],

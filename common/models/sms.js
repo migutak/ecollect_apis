@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function(Sms) {
+module.exports = function(sptypes) {
 
 };

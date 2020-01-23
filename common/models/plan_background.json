@@ -11,6 +11,10 @@
       "type": "number",
       "id": true
     },
+    "planid": {
+      "type": "string",
+      "required": true
+    },
     "accnumber": {
       "type": "string",
       "required": true

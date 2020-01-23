@@ -256,5 +256,9 @@
   "custview": {
     "dataSource": "oracle",
     "public": true
+  },
+  "sptypes": {
+    "dataSource": "oracle",
+    "public": true
   }
 }
