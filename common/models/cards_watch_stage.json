@@ -6,6 +6,11 @@
   "options": {
     "validateUpsert": true
   },
+  "scope": {
+    "include": [
+      "cards_watch_statics"
+    ]
+  },
   "properties": {
     "cardnumber": {
       "type": "string",
@@ -109,9 +114,6 @@
       "foreignKey": "cardacct"
     }
   },
-  "scope": { 
-    "include": ["cards_watch_statics"]
-},
   "acls": [],
   "methods": {}
 }

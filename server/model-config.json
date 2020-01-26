@@ -260,5 +260,9 @@
   "sptypes": {
     "dataSource": "oracle",
     "public": true
+  },
+  "authextletters": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

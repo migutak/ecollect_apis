@@ -6,6 +6,12 @@
   "options": {
     "validateUpsert": true
   },
+  "scope": {
+    "include": [
+      "watch",
+      "guarantors"
+    ]
+  },
   "properties": {
     "accnumber": {
       "type": "string",
@@ -88,9 +94,6 @@
       "model": "guarantordetails",
       "foreignKey": "accnumber"
     }
-  },
-  "scope": {
-    "include": ["watch","guarantors"]
   },
   "acls": [],
   "methods": {}
