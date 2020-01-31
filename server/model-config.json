@@ -264,5 +264,9 @@
   "authextletters": {
     "dataSource": "oracle",
     "public": true
+  },
+  "extletters": {
+    "dataSource": "oracle",
+    "public": true
   }
 }
