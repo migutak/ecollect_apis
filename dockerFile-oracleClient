@@ -24,3 +24,6 @@ EXPOSE 8000
 CMD ["node","."]
 
 # docker build -t migutak/ecollect_apis:2.0.0 -f dockerFile-oracleClient . 
+# docker run -it --name apis -p 8000:8000 migutak/ecollect_apis:2.0.0
+
+

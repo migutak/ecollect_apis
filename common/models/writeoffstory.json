@@ -1,0 +1,36 @@
+{
+  "name": "writeoffstory",
+  "plural": "writeoffstory",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "required": true,
+      "id": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "owner": {
+      "type": "string",
+      "required": true
+    },
+    "woffstory": {
+      "type": "string",
+      "required": true
+    },
+    "lastupdate": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

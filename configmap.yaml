@@ -8,4 +8,4 @@ data:
   FILEPATH: /app/nfsmount/demandletters
   DB_USER: ecol
   DB_PASSWORD: ecol
-  CONNECTIONSTRING: 192.168.0.30:1521/ORCLCDB.localdomain
+  CONNECTIONSTRING: 68.183.63.158:1521/ORCLCDB.localdomain

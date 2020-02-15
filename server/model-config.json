@@ -268,5 +268,9 @@
   "extletters": {
     "dataSource": "oracle",
     "public": true
+  },
+  "writeoffstory": {
+    "dataSource": "oracle",
+    "public": true
   }
 }
