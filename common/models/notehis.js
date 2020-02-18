@@ -34,7 +34,7 @@ module.exports = function (Notehis) {
     Notehis.custnotes = function (custnumber, offset, next, cb) {
         var ds = Notehis.dataSource;
         //
-        var total_sql = "Select id,owner,custnumber,accnumber,to_char(notedate) notedate, notesrc,noteimp, notemade from notehis where custnumber = '" + custnumber +"' order by id desc offset "+offset+" rows fetch next "+next+" rows only";
+        var total_sql = "Select id,owner,custnumber,accnumber,to_char(notedate) notedate, notesrc,noteimp, notemade, reason from notehis where custnumber = '" + custnumber +"' order by id desc offset "+offset+" rows fetch next "+next+" rows only";
         ds.connector.query(total_sql, [], function (err, accounts) {
             if (err) console.error(err);
             cb(err, accounts);
