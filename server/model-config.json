@@ -272,5 +272,9 @@
   "writeoffstory": {
     "dataSource": "oracle",
     "public": true
+  },
+  "vallnotes": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

@@ -4,7 +4,7 @@ module.exports = function (Notehis) {
     Notehis.total = function (custnumber, cb) {
         var ds = Notehis.dataSource;
         //
-        var total_sql = "Select count(*) total from notehis where custnumber = '" + custnumber +"'";
+        var total_sql = "Select count(*) total from vallnotes where custnumber = '" + custnumber +"'";
         ds.connector.query(total_sql, [], function (err, accounts) {
             if (err) console.error(err);
             cb(err, accounts);
@@ -33,8 +33,16 @@ module.exports = function (Notehis) {
 
     Notehis.custnotes = function (custnumber, offset, next, cb) {
         var ds = Notehis.dataSource;
+        if(!offset) 
+        {
+            offset = 0;
+        }
+        if(!next) 
+        {
+            next = 10;
+        }
         //
-        var total_sql = "Select id,owner,custnumber,accnumber,to_char(notedate) notedate, notesrc,noteimp, notemade, reason from notehis where custnumber = '" + custnumber +"' order by id desc offset "+offset+" rows fetch next "+next+" rows only";
+        var total_sql = "Select id,owner,custnumber,accnumber,to_char(notedate) notedate, notesrc,noteimp, notemade, reason from vallnotes where custnumber = '" + custnumber +"' offset "+offset+" rows fetch next "+next+" rows only";
         ds.connector.query(total_sql, [], function (err, accounts) {
             if (err) console.error(err);
             cb(err, accounts);

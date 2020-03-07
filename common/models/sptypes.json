@@ -8,6 +8,7 @@
   "properties": {
     "SPTITLE": {
       "type": "string",
+      "required": true,
       "id": true
     },
     "CONTACTPERSON": {
@@ -38,6 +39,9 @@
       "type": "string"
     },
     "EMAIL": {
+      "type": "string"
+    },
+    "ACTIVE": {
       "type": "string"
     }
   },

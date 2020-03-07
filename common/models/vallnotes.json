@@ -1,0 +1,43 @@
+{
+  "name": "vallnotes",
+  "plural": "vallnotes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "accnumber": {
+      "type": "string"
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "notemade": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "noteimp": {
+      "type": "string"
+    },
+    "notesrc": {
+      "type": "string"
+    },
+    "notedate": {
+      "type": "date"
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
