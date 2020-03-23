@@ -30,7 +30,7 @@
       "type": "string"
     },
     "dateupdated": {
-      "type": "date"
+      "type": "string"
     },
     "deleted": {
       "type": "string",

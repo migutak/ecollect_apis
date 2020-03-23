@@ -1,16 +1,14 @@
 version: "3.3"
 services:
   ecollectapis:
-    image: migutak/ecollect_apis:1.0.0
-    container_name: ecollectapis
-    restart: always
-    env_file:
-      - ./api.env
+    image: 172.16.19.151:5000/ecollect_apis:2.0.0
+    container_name: ecollect_apis
+    restart: on-failure
     environment:
-      - DB_HOST=192.168.0.30
-      - DB_PORT=1521
+      - DB_HOST=172.16.20.2
+      - DB_PORT=1523
       - DB_USER=ecol
-      - DB_PASSWORD=ecol
-      - DB_DATABASE=ORCLCDB.localdomain
+      - DB_PASSWORD=DsQSnttm_1
+      - DB_DATABASE=ECOLTST
     ports:
-      - "8000:8000"
+      - "7000:8000"

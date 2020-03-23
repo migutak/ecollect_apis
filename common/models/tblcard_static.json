@@ -90,25 +90,10 @@
     "nationid": {
       "type": "string"
     },
-    "outbalance": {
-      "type": "number"
-    },
-    "payment": {
-      "type": "string"
-    },
-    "prevdebt": {
-      "type": "string"
-    },
     "rpcode": {
       "type": "string"
     },
-    "stagedate": {
-      "type": "date"
-    },
     "tel": {
-      "type": "string"
-    },
-    "title": {
       "type": "string"
     }
   },

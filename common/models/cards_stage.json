@@ -8,7 +8,6 @@
   },
   "scope": {
     "include": [
-      "static",
       "demandsdue"
     ]
   },
@@ -111,12 +110,7 @@
   },
   "validations": [],
   "relations": {
-    "static": {
-      "type": "hasOne",
-      "model": "tblcard_static",
-      "foreignKey": "cardnumber",
-      "primaryKey": "cardnumber"
-    },
+    
     "demandsdue": {
       "type": "hasMany",
       "model": "demandsduecc",

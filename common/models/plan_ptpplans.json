@@ -12,7 +12,7 @@
       "id": true
     },
     "no_of_frequency": {
-      "type": "string",
+      "type": "number",
       "required": true
     },
     "accnumber": {
