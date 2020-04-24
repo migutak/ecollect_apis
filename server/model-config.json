@@ -276,5 +276,9 @@
   "vallnotes": {
     "dataSource": "oracle",
     "public": true
+  },
+  "insurance": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

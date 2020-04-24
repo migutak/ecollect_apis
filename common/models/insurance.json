@@ -1,6 +1,6 @@
 {
-  "name": "teles",
-  "plural": "teles",
+  "name": "insurance",
+  "plural": "insurance",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -12,43 +12,33 @@
       "id": true,
       "required": false
     },
-    "custnumber": {
-      "type": "string",
-      "required": true
-    },
-    "telephone": {
+    "insuranceName": {
       "type": "string"
     },
-    "email": {
+    "physicalAddress": {
       "type": "string"
     },
-    "owner": {
+    "postalAddress": {
       "type": "string"
     },
-    "updatedlast": {
+    "emailAddress": {
+      "type": "string"
+    },
+    "contactPerson": {
+      "type": "string"
+    },
+    "updateBy": {
+      "type": "string"
+    },
+    "dateofEntry": {
       "type": "date"
     },
-    "updatedby": {
-      "type": "string"
-    },
-    "active": {
-      "type": "string"
-    },
-    "address": {
-      "type": "string"
-    },
-    "postcode": {
-      "type": "string"
-    },
-    "contacttype": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
+    "dateofLastUpdate": {
+      "type": "date"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": [],
   "acls": [],
   "methods": {}
 }
