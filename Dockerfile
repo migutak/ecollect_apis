@@ -16,7 +16,7 @@ RUN yum -y install curl \
 USER oracle
 RUN mkdir -p /home/oracle/ecollect_apis
 WORKDIR /home/oracle/ecollect_apis
-COPY --chown=node . .
+COPY --chown=oracle . .
 RUN npm install --only=production \
 # CMD ["sqlplus", "-v"]
 EXPOSE 8000
