@@ -17,7 +17,7 @@ USER oracle
 RUN mkdir -p /home/oracle/ecollect_apis
 WORKDIR /home/oracle/ecollect_apis
 COPY --chown=oracle . .
-RUN npm install --only=production \
+RUN npm install --only=production
 # CMD ["sqlplus", "-v"]
 EXPOSE 8000
 CMD ["node","."]
