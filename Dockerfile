@@ -1,4 +1,4 @@
-FROM node:12.9.1-alpine
+FROM node:12.9.1-slim
 
 RUN apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade && apt-get install -y alien libaio1 unzip
 # Set to a non-root built-in user `node`
