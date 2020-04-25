@@ -7,21 +7,18 @@ RUN useradd -ms /bin/bash oracle
 RUN yum -y install curl \
 && curl --silent --location https://rpm.nodesource.com/setup_10.x | bash - \
 && yum -y install nodejs \
-&& yum clean all
-
-RUN  yum -y install oracle-release-el7 && yum-config-manager --enable ol7_oracle_instantclient && \
+&& yum clean all \
+&&  yum -y install oracle-release-el7 && yum-config-manager --enable ol7_oracle_instantclient && \
      yum -y install oracle-instantclient${release}.${update}-basic oracle-instantclient${release}.${update}-devel oracle-instantclient${release}.${update}-sqlplus && \
      rm -rf /var/cache/yum && \
      yum clean all
 
 USER oracle
 RUN mkdir -p /home/oracle/ecollect_apis
-
-COPY . /home/oracle/ecollect_apis
 WORKDIR /home/oracle/ecollect_apis
-RUN npm install
+COPY --chown=node . .
+RUN npm install --only=production \
 # CMD ["sqlplus", "-v"]
-
 EXPOSE 8000
 CMD ["node","."]
 
