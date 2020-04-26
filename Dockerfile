@@ -16,7 +16,7 @@ RUN mkdir /home/node/oracle \
 && unzip instantclient-basic-linux.x64-19.6.0.0.0dbru.zip -d /home/node/oracle \
 && rm -f oracle-instantclient19.6*
 ENV LD_LIBRARY_PATH=/home/node/oracle/instantclient_19_6:$LD_LIBRARY_PATH
-RUN npm install --only=production 
+RUN npm install 
 # Bind to all network interfaces so that it can be mapped to the host OS
 ENV HOST=0.0.0.0 PORT=8000
 
