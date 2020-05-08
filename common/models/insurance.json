@@ -24,6 +24,9 @@
     "emailAddress": {
       "type": "string"
     },
+    "telNumber": {
+      "type": "string"
+    },
     "contactPerson": {
       "type": "string"
     },
@@ -38,7 +41,7 @@
     }
   },
   "validations": [],
-  "relations": [],
+  "relations": {},
   "acls": [],
   "methods": {}
 }

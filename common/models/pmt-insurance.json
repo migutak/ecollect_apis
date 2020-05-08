@@ -1,0 +1,99 @@
+{
+  "name": "pmt_insurance",
+  "plural": "pmt_insurance",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "schema": "wf_workflow",
+    "table": "PMT_INSURANCE"
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "mysql": {
+        "columnName": "ID",
+        "dataType": "BIGINT",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "insuranceName": {
+      "type": "string",
+      "required": true,
+      "mysql": {
+        "columnName": "INSURANCENAME",
+        "dataType": "VARCHAR",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "physicalAddress": {
+      "type": "string",
+      "mysql": {
+        "columnName": "PHYSICALADDRESS",
+        "dataType": "VARCHAR",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "postalAddress": {
+      "type": "string",
+      "mysql": {
+        "columnName": "POSTALADDRESS",
+        "dataType": "VARCHAR",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "emailAddress": {
+      "type": "string",
+      "mysql": {
+        "columnName": "EMAILADDRESS",
+        "dataType": "VARCHAR",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "telNumber": {
+      "type": "string",
+      "mysql": {
+        "columnName": "TELNUMBER",
+        "dataType": "VARCHAR",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "contactPerson": {
+      "type": "string",
+      "mysql": {
+        "columnName": "CONTACTPERSON",
+        "dataType": "VARCHAR",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

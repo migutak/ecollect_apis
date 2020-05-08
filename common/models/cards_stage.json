@@ -110,7 +110,6 @@
   },
   "validations": [],
   "relations": {
-    
     "demandsdue": {
       "type": "hasMany",
       "model": "demandsduecc",

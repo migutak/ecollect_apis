@@ -8,5 +8,15 @@
     "tns": "",
     "user": "ecol",
     "connector": "oracle"
+  },
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3305,
+    "url": "",
+    "database": "wf_workflow",
+    "password": "root",
+    "name": "mysql",
+    "user": "root",
+    "connector": "mysql"
   }
 }

@@ -9,8 +9,8 @@
   "properties": {
     "accnumber": {
       "type": "string",
-      "required": true,
-      "id": true
+      "id": true,
+      "required": true
     },
     "custnumber": {
       "type": "string",

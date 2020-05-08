@@ -280,5 +280,9 @@
   "insurance": {
     "dataSource": "oracle",
     "public": true
+  },
+  "pmt_insurance": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
