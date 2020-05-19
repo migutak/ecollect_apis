@@ -1,0 +1,49 @@
+{
+  "name": "pmt_watch_stage",
+  "plural": "pmt_watch_stage",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "schema": "wf_workflow",
+    "table": "PMT_WATCH_STAGE"
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custname": {
+      "type": "string",
+      "required": true
+    },
+    "productcode": {
+      "type": "string"
+    },
+    "branchcode": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string",
+      "default": "KES"
+    },
+    "oustbalance": {
+      "type": "number",
+      "default": 0
+    },
+    "stagedate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

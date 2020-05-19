@@ -284,5 +284,13 @@
   "pmt_insurance": {
     "dataSource": "mysql",
     "public": true
+  },
+  "pmt_watch_stage": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tbl_ipf": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

@@ -1,0 +1,88 @@
+{
+  "name": "tbl_ipf",
+  "plural": "tbl_ipf",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "custname": {
+      "type": "string"
+    },
+    "nationid": {
+      "type": "string"
+    },
+    "productcode": {
+      "type": "string"
+    },
+    "section": {
+      "type": "string"
+    },
+    "oustbalance": {
+      "type": "number"
+    },
+    "arrearsAmount": {
+      "type": "number",
+      "default": 0
+    },
+    "daysinarr": {
+      "type": "number",
+      "default": 0
+    },
+    "scheduleAmount": {
+      "type": "number"
+    },
+    "scheduleDate": {
+      "type": "string"
+    },
+    "origDate": {
+      "type": "string"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "policyNumber": {
+      "type": "string"
+    },
+    "insurance": {
+      "type": "string"
+    },
+    "broker": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "cancellationDate": {
+      "type": "date"
+    },
+    "reinstatementDate": {
+      "type": "date"
+    },
+    "paymentDate": {
+      "type": "date"
+    },
+    "writeoffAmount": {
+      "type": "number"
+    },
+    "casenumber": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
