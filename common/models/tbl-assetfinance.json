@@ -1,6 +1,6 @@
 {
-  "name": "tbl_ipf",
-  "plural": "tbl_ipf",
+  "name": "tbl_assetfinance",
+  "plural": "tbl_assetfinance",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -56,29 +56,53 @@
     "rrocode": {
       "type": "string"
     },
-    "policyNumber": {
+    "vehicleregnumber": {
       "type": "string"
     },
-    "insurance": {
+    "make": {
       "type": "string"
     },
-    "broker": {
+    "model": {
+      "type": "string"
+    },
+    "repossessionorderdate": {
+      "type": "date"
+    },
+    "chasisnumber": {
       "type": "string"
     },
     "status": {
+      "type": "date"
+    },
+    "daterepossessed": {
+      "type": "date"
+    },
+    "auctioneer": {
       "type": "string"
     },
-    "cancellationDate": {
+    "storageyard": {
+      "type": "string"
+    },
+    "datebooked": {
       "type": "date"
     },
-    "reinstatementDate": {
+    "datevaluation": {
       "type": "date"
     },
-    "paymentDate": {
-      "type": "date"
-    },
-    "writeoffAmount": {
+    "forcedsalevalue": {
       "type": "number"
+    },
+    "marketsalevalue": {
+      "type": "number"
+    },
+    "sold": {
+      "type": "string"
+    },
+    "released": {
+      "type": "string"
+    },
+    "datereleased": {
+      "type": "date"
     },
     "casenumber": {
       "type": "string"

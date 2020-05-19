@@ -292,5 +292,9 @@
   "tbl_ipf": {
     "dataSource": "oracle",
     "public": true
+  },
+  "tbl_assetfinance": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

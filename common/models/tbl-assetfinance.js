@@ -1,8 +1,8 @@
 'use strict';
 
-module.exports = function(Tblipf) {
-    Tblipf.gridviewall = function (request, cb) {
-        var ds = Tblipf.dataSource;
+module.exports = function(Tblassetfinance) {
+    Tblassetfinance.gridviewall = function (request, cb) {
+        var ds = Tblassetfinance.dataSource;
         const SQL = buildSql(request);
         ds.connector.query(SQL, [], function (err, result) {
           const rowCount = getRowCount(request, result);
@@ -13,7 +13,7 @@ module.exports = function(Tblipf) {
     
       };
     
-      Tblipf.remoteMethod('gridviewall', {
+      Tblassetfinance.remoteMethod('gridviewall', {
         accepts: [
           {
             arg: 'body',
@@ -36,7 +36,7 @@ module.exports = function(Tblipf) {
     
       function buildSql(request) {
         const selectSql = createSelectSql(request);
-        const fromSql = ' from ecol.tbl_ipf ';
+        const fromSql = ' from ecol.tbl_assetfinance ';
         const whereSql = createWhereSql(request);
         const limitSql = createLimitSql(request);
     
