@@ -1,0 +1,32 @@
+{
+  "name": "pmt_holder",
+  "plural": "pmt_holder",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "schema": "wf_workflow",
+    "table": "PMT_HOLDER"
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "process": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

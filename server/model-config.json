@@ -296,5 +296,17 @@
   "tbl_assetfinance": {
     "dataSource": "oracle",
     "public": true
+  },
+  "pmt_relegate": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "pmt_holder": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tbl_productofferings": {
+    "dataSource": "oracle",
+    "public": true
   }
 }
