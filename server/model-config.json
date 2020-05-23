@@ -316,5 +316,9 @@
   "tbl_writeoffs": {
     "dataSource": "oracle",
     "public": true
+  },
+  "tbl_investigators": {
+    "dataSource": "oracle",
+    "public": true
   }
 }
