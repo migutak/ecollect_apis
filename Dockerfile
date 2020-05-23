@@ -7,16 +7,19 @@ USER node
 
 # Create app directory (with user `node`)
 RUN mkdir -p /home/node/app
-
 WORKDIR /home/node/app
-# Bundle app source code
-COPY --chown=node . .
- 
-RUN mkdir /home/node/oracle \
-&& unzip instantclient-basic-linux.x64-19.6.0.0.0dbru.zip -d /home/node/oracle \
+COPY --chown=node package* /home/node/app/
+COPY --chown=node instant* /home/node/app/
+
+RUN unzip instantclient-basic-linux.x64-19.6.0.0.0dbru.zip -d /home/node/oracle \
 && rm -f oracle-instantclient19.6*
 ENV LD_LIBRARY_PATH=/home/node/oracle/instantclient_19_6:$LD_LIBRARY_PATH
 RUN npm install 
+
+# Bundle app source code
+COPY --chown=node . .
+ 
+
 # Bind to all network interfaces so that it can be mapped to the host OS
 ENV HOST=0.0.0.0 PORT=8000
 
