@@ -10,7 +10,8 @@
       "loopback/common/mixins",
       "loopback/server/mixins",
       "../common/mixins",
-      "./mixins"
+      "./mixins",
+      "../node_modules/loopback-redis-cache"
     ]
   },
   "sms": {
@@ -131,7 +132,10 @@
   },
   "tqall": {
     "dataSource": "oracle",
-    "public": true
+    "public": true,
+    "mixins": {
+      "Rediscache": {}
+    }
   },
   "qall": {
     "dataSource": "oracle",
@@ -306,6 +310,10 @@
     "public": true
   },
   "tbl_productofferings": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_writeoffs": {
     "dataSource": "oracle",
     "public": true
   }

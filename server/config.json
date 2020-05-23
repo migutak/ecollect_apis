@@ -17,6 +17,10 @@
       "extended": true,
       "limit": "80mb"
     },
+    "redis": {
+      "host": "127.0.0.1",
+      "password": ""
+    },
     "cors": false
   }
 }
