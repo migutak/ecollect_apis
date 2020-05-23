@@ -10,13 +10,13 @@
     "connector": "oracle"
   },
   "mysql": {
-    "host": "127.0.0.1",
-    "port": 3305,
+    "host": "${MYSQL_HOST}",
+    "port": "${MYSQL_PORT}",
     "url": "",
-    "database": "wf_workflow",
-    "password": "root",
+    "database": "${MYSQL_DATABASE}",
+    "password": "${MYSQL_PASSWORD}",
     "name": "mysql",
-    "user": "root",
+    "user": "${MYSQL_USER}",
     "connector": "mysql"
   }
 }
