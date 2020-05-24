@@ -9,6 +9,7 @@
   "properties": {
     "casenumber": {
       "type": "string",
+      "id": true,
       "required": true
     },
     "accnumber": {
