@@ -1,0 +1,76 @@
+{
+  "name": "tblmarketors",
+  "plural": "tblmarketors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custname": {
+      "type": "string",
+      "required": true
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "fileno": {
+      "type": "string"
+    },
+    "propertyno": {
+      "type": "string"
+    },
+    "accbalance": {
+      "type": "number"
+    },
+    "openmarketvalue": {
+      "type": "number"
+    },
+    "forcedsalevalue": {
+      "type": "number"
+    },
+    "ownership": {
+      "type": "string"
+    },
+    "dateinput": {
+      "type": "date"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
+    },
+    "newstatus": {
+      "type": "string"
+    },
+    "serviceprovider": {
+      "type": "string"
+    },
+    "dateassigned": {
+      "type": "date"
+    },
+    "duedate": {
+      "type": "date"
+    },
+    "comment": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

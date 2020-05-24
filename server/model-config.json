@@ -320,5 +320,9 @@
   "tbl_investigators": {
     "dataSource": "oracle",
     "public": true
+  },
+  "tblmarketors": {
+    "dataSource": "oracle",
+    "public": true
   }
 }
