@@ -1,8 +1,8 @@
 'use strict';
 
-module.exports = function (Tblmarketors) {
-    Tblmarketors.gridviewall = function (request, cb) {
-        var ds = Tblmarketors.dataSource;
+module.exports = function(Tblvaluers) {
+    Tblvaluers.gridviewall = function (request, cb) {
+        var ds = Tblvaluers.dataSource;
         const SQL = buildSql(request);
         ds.connector.query(SQL, [], function (err, result) {
             const rowCount = getRowCount(request, result);
@@ -13,7 +13,7 @@ module.exports = function (Tblmarketors) {
 
     };
 
-    Tblmarketors.remoteMethod('gridviewall', {
+    Tblvaluers.remoteMethod('gridviewall', {
         accepts: [
             {
                 arg: 'body',
@@ -36,7 +36,7 @@ module.exports = function (Tblmarketors) {
 
     function buildSql(request) {
         const selectSql = createSelectSql(request);
-        const fromSql = ' from ecol.tblmarketors ';
+        const fromSql = ' from ecol.tblvaluers ';
         const whereSql = createWhereSql(request);
         const limitSql = createLimitSql(request);
 
@@ -44,6 +44,8 @@ module.exports = function (Tblmarketors) {
         const groupBySql = createGroupBySql(request);
 
         const SQL = selectSql + fromSql + whereSql + groupBySql + orderBySql + limitSql;
+
+        console.log(SQL);
 
         return SQL;
     }

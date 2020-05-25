@@ -1,6 +1,5 @@
 {
-  "name": "tblmarketors",
-  "plural": "tblmarketors",
+  "name": "tblinvoices",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -11,61 +10,53 @@
       "type": "number",
       "id": true
     },
-    "custnumber": {
+    "sptitle": {
       "type": "string",
       "required": true
     },
     "accnumber": {
-      "type": "string",
-      "required": true
+      "type": "string"
+    },
+    "custnumber": {
+      "type": "string"
     },
     "custname": {
-      "type": "string",
-      "required": true
-    },
-    "arocode": {
       "type": "string"
     },
-    "rrocode": {
+    "spaccount": {
       "type": "string"
     },
-    "fileno": {
-      "type": "string"
+    "datefeenote": {
+      "type": "date"
     },
-    "propertyno": {
-      "type": "string"
+    "feenotedate": {
+      "type": "date"
     },
-    "accbalance": {
+    "feenoteamnt": {
       "type": "number"
     },
-    "openmarketvalue": {
+    "approvedamnt": {
       "type": "number"
-    },
-    "forcedsalevalue": {
-      "type": "number"
-    },
-    "ownership": {
-      "type": "string"
     },
     "dateinput": {
       "type": "date"
     },
+    "method": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
     "owner": {
       "type": "string"
     },
+    "arocode": {
+      "type": "string"
+    },
+    "printdate": {
+      "type": "date"
+    },
     "stagedate": {
-      "type": "date"
-    },
-    "newstatus": {
-      "type": "string"
-    },
-    "serviceprovider": {
-      "type": "string"
-    },
-    "dateassigned": {
-      "type": "date"
-    },
-    "duedate": {
       "type": "date"
     }
   },

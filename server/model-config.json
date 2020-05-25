@@ -324,5 +324,17 @@
   "tblmarketors": {
     "dataSource": "oracle",
     "public": true
+  },
+  "tbldebtcollectors": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblvaluers": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblinvoices": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

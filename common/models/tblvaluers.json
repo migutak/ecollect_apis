@@ -1,6 +1,5 @@
 {
-  "name": "tblmarketors",
-  "plural": "tblmarketors",
+  "name": "tblvaluers",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -12,16 +11,13 @@
       "id": true
     },
     "custnumber": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "accnumber": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "custname": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "arocode": {
       "type": "string"
@@ -32,11 +28,38 @@
     "fileno": {
       "type": "string"
     },
+    "vehiclemake": {
+      "type": "string"
+    },
     "propertyno": {
+      "type": "string"
+    },
+    "regowner": {
+      "type": "string"
+    },
+    "ownership": {
       "type": "string"
     },
     "accbalance": {
       "type": "number"
+    },
+    "yard": {
+      "type": "string"
+    },
+    "dateinput": {
+      "type": "date"
+    },
+    "duedate": {
+      "type": "date"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "vehicleregno": {
+      "type": "string"
+    },
+    "serviceprovider": {
+      "type": "string"
     },
     "openmarketvalue": {
       "type": "number"
@@ -44,28 +67,19 @@
     "forcedsalevalue": {
       "type": "number"
     },
-    "ownership": {
-      "type": "string"
-    },
-    "dateinput": {
+    "dateassigned": {
       "type": "date"
     },
-    "owner": {
-      "type": "string"
-    },
-    "stagedate": {
+    "valuationdate": {
       "type": "date"
     },
     "newstatus": {
       "type": "string"
     },
-    "serviceprovider": {
+    "followupcomment": {
       "type": "string"
     },
-    "dateassigned": {
-      "type": "date"
-    },
-    "duedate": {
+    "stagedate": {
       "type": "date"
     }
   },
