@@ -31,6 +31,9 @@
     "ptpdate": {
       "type": "string"
     },
+    "promisedate": {
+      "type": "date"
+    },
     "paymethod": {
       "type": "string"
     },

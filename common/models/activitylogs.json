@@ -83,15 +83,6 @@
         "nullable": "Y"
       }
     },
-    "ptpdate": {
-      "type": "date",
-      "oracle": {
-        "columnName": "PROMISEDATE",
-        "dataType": "DATE",
-        "dataLength": 40,
-        "nullable": "Y"
-      }
-    },
     "collectornote": {
       "type": "string",
       "oracle": {

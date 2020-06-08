@@ -10,5 +10,10 @@ services:
       - DB_USER=ecol
       - DB_PASSWORD=DsQSnttm_1
       - DB_DATABASE=ECOLTST
+      - MYSQL_HOST=172.16.19.151
+      - MYSQL_PORT=3305
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=wf_workflow
     ports:
-      - "7000:8000"
+      - "8000:8000"
