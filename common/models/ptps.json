@@ -45,6 +45,20 @@
     },
     "ammended": {
       "type": "string"
+    },
+    "ptpsmsnumber": {
+      "type": "string"
+    },
+    "ptpemailaddress": {
+      "type": "string"
+    },
+    "ptpsms": {
+      "type": "string",
+      "default": "false"
+    },
+    "ptpemail": {
+      "type": "string",
+      "default": "false"
     }
   },
   "validations": [],

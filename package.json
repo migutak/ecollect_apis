@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint && npm audit"
+    "posttest": "npm run lint && npm audit",
+    "build": "docker build -t docker.io/migutak/ecollect_apis:4.0.0 ."
   },
   "dependencies": {
     "compression": "^1.0.3",

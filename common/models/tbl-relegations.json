@@ -1,0 +1,117 @@
+{
+  "name": "tbl_relegations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "casenumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custname": {
+      "type": "string"
+    },
+    "daysinarr": {
+      "type": "number"
+    },
+    "oustbalance": {
+      "type": "number"
+    },
+    "totalarrears": {
+      "type": "number"
+    },
+    "bucket": {
+      "type": "string"
+    },
+    "productcode": {
+      "type": "string"
+    },
+    "section": {
+      "type": "string"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "branchcode": {
+      "type": "string"
+    },
+    "branchname": {
+      "type": "string"
+    },
+    "applink": {
+      "type": "string"
+    },
+    "requestdate": {
+      "type": "date"
+    },
+    "requestby": {
+      "type": "string"
+    },
+    "approved": {
+      "type": "string"
+    },
+    "approvaldate": {
+      "type": "date"
+    },
+    "approvedby": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "rrochangedate": {
+      "type": "date"
+    },
+    "rrochangeby": {
+      "type": "string"
+    },
+    "filerequestby": {
+      "type": "string"
+    },
+    "filerequestdate": {
+      "type": "date"
+    },
+    "filerequested": {
+      "type": "string"
+    },
+    "filesenddate": {
+      "type": "date"
+    },
+    "filesendby": {
+      "type": "string"
+    },
+    "filereceiveddate": {
+      "type": "date"
+    },
+    "filereceivedby": {
+      "type": "string"
+    },
+    "approval": {
+      "type": "string"
+    },
+    "approvalnote": {
+      "type": "string"
+    },
+    "newrrocode": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

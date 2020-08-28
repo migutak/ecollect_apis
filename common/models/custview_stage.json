@@ -1,0 +1,35 @@
+{
+  "name": "custview_stage",
+  "plural": "custview_stage",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ACCNUMBER": {
+      "type": "string",
+      "id": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "outsbalance": {
+      "type": "number"
+    },
+    "productcode": {
+      "type": "string"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -336,5 +336,29 @@
   "tblinvoices": {
     "dataSource": "oracle",
     "public": true
+  },
+  "tbl_relegations": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "custview_stage": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "customer_stage": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "rollrates": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_allocations_cycle": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_colofficer_memogroups": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

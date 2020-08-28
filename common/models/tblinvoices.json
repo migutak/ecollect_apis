@@ -58,6 +58,18 @@
     },
     "stagedate": {
       "type": "date"
+    },
+    "wht": {
+      "type": "number"
+    },
+    "vat": {
+      "type": "number"
+    },
+    "invoiceimage": {
+      "type": "string"
+    },
+    "invoicename": {
+      "type": "string"
     }
   },
   "validations": [],
