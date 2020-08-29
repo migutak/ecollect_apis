@@ -285,28 +285,12 @@
     "dataSource": "oracle",
     "public": true
   },
-  "pmt_insurance": {
-    "dataSource": "mysql",
-    "public": true
-  },
-  "pmt_watch_stage": {
-    "dataSource": "mysql",
-    "public": true
-  },
   "tbl_ipf": {
     "dataSource": "oracle",
     "public": true
   },
   "tbl_assetfinance": {
     "dataSource": "oracle",
-    "public": true
-  },
-  "pmt_relegate": {
-    "dataSource": "mysql",
-    "public": false
-  },
-  "pmt_holder": {
-    "dataSource": "mysql",
     "public": true
   },
   "tbl_productofferings": {

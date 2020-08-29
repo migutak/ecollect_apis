@@ -8,15 +8,5 @@
     "tns": "",
     "user": "ecol",
     "connector": "oracle"
-  },
-  "mysql": {
-    "host": "${MYSQL_HOST}",
-    "port": "${MYSQL_PORT}",
-    "url": "",
-    "database": "${MYSQL_DATABASE}",
-    "password": "${MYSQL_PASSWORD}",
-    "name": "mysql",
-    "user": "${MYSQL_USER}",
-    "connector": "mysql"
   }
 }
