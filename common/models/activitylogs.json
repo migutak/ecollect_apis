@@ -235,6 +235,18 @@
         "dataLength": 100,
         "nullable": "Y"
       }
+    },
+    "restructure": {
+      "type": "string"
+    },
+    "restructureamount": {
+      "type": "number"
+    },
+    "abilitytopay": {
+      "type": "string"
+    },
+    "restructuredate": {
+      "type": "string"
     }
   },
   "validations": [],

@@ -34,11 +34,12 @@ WORKDIR /home/node/app
 # Install app dependencies
 COPY --chown=node package*.json ./
 
+RUN npm install --production
 
-RUN npm install
 
 # Bundle app source code
 COPY --chown=node . .
+
 
 # Bind to all network interfaces so that it can be mapped to the host OS
 ENV HOST=0.0.0.0 PORT=8000

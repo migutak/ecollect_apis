@@ -344,5 +344,13 @@
   "tbl_colofficer_memogroups": {
     "dataSource": "oracle",
     "public": true
+  },
+  "tblexcuse": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblexcuse_details": {
+    "dataSource": "oracle",
+    "public": true
   }
 }
