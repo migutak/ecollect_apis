@@ -44,6 +44,12 @@
     },
     "lastupdatedate": {
       "type": "date"
+    },
+    "additionaldetails": {
+      "type": "string"
+    },
+    "productstatus": {
+      "type": "string"
     }
   },
   "validations": [],

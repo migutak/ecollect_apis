@@ -1,0 +1,43 @@
+{
+  "name": "tbl_ipf_details",
+  "plural": "tbl_ipf_details",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "customercode": {
+      "type": "string"
+    },
+    "insurance_company": {
+      "type": "string"
+    },
+    "broker_agent": {
+      "type": "string"
+    },
+    "policynumber": {
+      "type": "string"
+    },
+    "typeofcover": {
+      "type": "string"
+    },
+    "policystartdate": {
+      "type": "string"
+    },
+    "policyenddate": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

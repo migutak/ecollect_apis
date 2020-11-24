@@ -352,5 +352,9 @@
   "tblexcuse_details": {
     "dataSource": "oracle",
     "public": true
+  },
+  "tbl_ipf_details": {
+    "dataSource": "oracle",
+    "public": true
   }
 }
