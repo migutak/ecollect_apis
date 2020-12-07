@@ -37,7 +37,7 @@
         "nullable": "N"
       }
     },
-    "collectoraction": {
+    "action": {
       "type": "string",
       "oracle": {
         "columnName": "ACTION",
@@ -83,7 +83,7 @@
         "nullable": "Y"
       }
     },
-    "collectornote": {
+    "notemade": {
       "type": "string",
       "oracle": {
         "columnName": "NOTEMADE",
@@ -114,15 +114,6 @@
       "type": "string",
       "oracle": {
         "columnName": "CMDSTATUS",
-        "dataType": "VARCHAR2",
-        "dataLength": 40,
-        "nullable": "Y"
-      }
-    },
-    "branchstatus": {
-      "type": "string",
-      "oracle": {
-        "columnName": "BRANCHSTATUS",
         "dataType": "VARCHAR2",
         "dataLength": 40,
         "nullable": "Y"
@@ -246,6 +237,12 @@
       "type": "string"
     },
     "restructuredate": {
+      "type": "string"
+    },
+    "toemail": {
+      "type": "string"
+    },
+    "toemailaddress": {
       "type": "string"
     }
   },

@@ -75,6 +75,9 @@
     },
     "team": {
       "type": "string"
+    },
+    "remedialunit": {
+      "type": "string"
     }
   },
   "validations": [],

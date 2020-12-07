@@ -50,6 +50,18 @@
     },
     "productstatus": {
       "type": "string"
+    },
+    "settlementdate": {
+      "type": "date"
+    },
+    "collector": {
+      "type": "string"
+    },
+    "remedialunit": {
+      "type": "string"
+    },
+    "recorddate": {
+      "type": "date"
     }
   },
   "validations": [],
