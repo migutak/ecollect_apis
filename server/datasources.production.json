@@ -1,0 +1,12 @@
+{
+  "oracle": {
+    "host": "copkprdcont3-scan.co-opbank.co.ke",
+    "port": 1559,
+    "database": "ECOLLECT",
+    "password": "L#TTc011",
+    "name": "oracle",
+    "tns": "",
+    "user": "ecol",
+    "connector": "oracle"
+  }
+}

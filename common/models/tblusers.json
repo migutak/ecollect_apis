@@ -85,6 +85,11 @@
   "acls": [],
   "methods": {},
   "mixins": {
-    "Rediscache": {}      
+    "Rediscache": {
+      "client": {
+        "host": "ecollectweb.co-opbank.co.ke",
+        "password": ""
+      }
+    }      
  }
 }
