@@ -1,0 +1,44 @@
+{
+  "name": "plan_remedialofferings",
+  "plural": "plan_remedialofferings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "accnumber": {
+      "type": "string"
+    },
+    "planid": {
+      "type": "string"
+    },
+    "remedialofferings": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "dateupdated": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "string"
+    },
+    "curren": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

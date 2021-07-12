@@ -1,0 +1,45 @@
+{
+  "name": "guarantordetails",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "nationid": {
+      "type": "string"
+    },
+    "guarantorname": {
+      "type": "string"
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "accnumber": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "postalcode": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "telnumber": {
+      "type": "string"
+    },
+    "active": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

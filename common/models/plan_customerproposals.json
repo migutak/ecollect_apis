@@ -1,0 +1,41 @@
+{
+  "name": "plan_customerproposals",
+  "plural": "plan_customerproposals",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "accnumber": {
+      "type": "string"
+    },
+    "customerproposal": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "dateupdated": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "string"
+    },
+    "curren": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

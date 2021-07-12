@@ -1,0 +1,27 @@
+{
+  "name": "qallcards",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cardnumber": {
+      "type": "string",
+      "required": true
+    },
+    "cardacct": {
+      "type": "string"
+    },
+    "cardname": {
+      "type": "string"
+    },
+    "cardstatus": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

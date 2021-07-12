@@ -1,0 +1,50 @@
+{
+  "name": "tblactivitylogs",
+  "plural": "tblactivitylogs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ACTIVITYID": {
+      "type": "number",
+      "id": true
+    },
+    "ACCNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "CUSTNUMBER": {
+      "type": "string"
+    },
+    "COLLECTORACTION": {
+      "type": "string",
+      "default": "0"
+    },
+    "PARTY": {
+      "type": "string"
+    },
+    "PTP": {
+      "type": "string",
+      "default": "N"
+    },
+    "PTPAMOUNT": {
+      "type": "number",
+      "default": 0
+    },
+    "PTPDATE": {
+      "type": "date"
+    },
+    "ACTIONDATE": {
+      "type": "date"
+    },
+    "ACTIONOWNER": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

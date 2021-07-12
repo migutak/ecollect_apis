@@ -1,0 +1,63 @@
+{
+  "name": "tblreminders",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "number",
+      "oracle": {
+        "columnName": "ID",
+        "dataType": "NUMBER",
+        "nullable": "N"
+      },
+      "id": true
+    },
+    "ACCNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "PRIORITY": {
+      "type": "string",
+      "required": true
+    },
+    "ISSUE": {
+      "type": "string",
+      "required": true
+    },
+    "SUBMITTEDDATE": {
+    "type": "string"
+  },
+    "DESCRIPTION": {
+      "type": "string",
+      "required": true
+    },
+    "SCHEDULEDATE": {
+      "type": "string",
+      "required": true
+    },
+    "STATUS": {
+      "type": "string",
+      "required": true
+    },
+    "TIMEOVER": {
+      "type": "string"
+    },
+    "REACHED": {
+      "type": "number"
+    },
+    "READ": {
+      "type": "number"
+    },
+    "SUBMITTEDBY": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

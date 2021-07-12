@@ -1,0 +1,53 @@
+{
+  "name": "demandsettings",
+  "plural": "demandsettings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "letterid": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "smstemplate": {
+      "type": "string"
+    },
+    "suspendletter": {
+      "type": "string"
+    },
+    "templatepath": {
+      "type": "string"
+    },
+    "autodelivered": {
+      "type": "string"
+    },
+    "suspendautodelivery": {
+      "type": "string"
+    },
+    "suspendsms": {
+      "type": "string"
+    },
+    "datelastupdated": {
+      "type": "date"
+    },
+    "updatedby": {
+      "type": "string"
+    },
+    "byemail": {
+      "type": "string"
+    },
+    "byphysical": {
+      "type": "string"
+    },
+    "bysms": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

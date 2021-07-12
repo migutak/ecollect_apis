@@ -1,0 +1,46 @@
+{
+  "name": "plan_ptpplans",
+  "plural": "plan_ptpplans",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "ptpfreq": {
+      "type": "string",
+      "required": true
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "ptpamount": {
+      "type": "number"
+    },
+    "ptpstartdate": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "dateupdated": {
+      "type": "string"
+    },
+    "ptpmet": {
+      "type": "string",
+      "default": "N"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

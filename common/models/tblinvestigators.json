@@ -1,0 +1,96 @@
+{
+  "name": "tblinvestigators",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "string",
+      "id": true
+    },
+    "CUSTNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "ACCNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "CUSTNAME": {
+      "type": "string"
+    },
+    "AROCODE": {
+      "type": "string"
+    },
+    "FILENO": {
+      "type": "string"
+    },
+    "PROPERTYNO": {
+      "type": "string"
+    },
+    "REASONFORINV": {
+      "type": "string"
+    },
+    "REGION": {
+      "type": "string"
+    },
+    "ACCBALANCE": {
+      "type": "string"
+    },
+    "DAYSOVERDUE": {
+      "type": "string"
+    },
+    "DUEDATE_EXT": {
+      "type": "string"
+    },
+    "FEENOTEPAID": {
+      "type": "string"
+    },
+    "DATEFEENOTE": {
+      "type": "string"
+    },
+    "FEENOTE": {
+      "type": "string"
+    },
+    "DATEOFSERVICE": {
+      "type": "string"
+    },
+    "NOOFDAYSEXT": {
+      "type": "string"
+    },
+    "DATEOFEXT": {
+      "type": "string"
+    },
+    "DUEDATE": {
+      "type": "string"
+    },
+    "OPENMARKETVALUE": {
+      "type": "string"
+    },
+    "FORCEDSALEVALUE": {
+      "type": "string"
+    },
+    "DATEINPUT": {
+      "type": "date"
+    },
+    "OWNER": {
+      "type": "string"
+    },
+    "STAGEDATE": {
+      "type": "date"
+    },
+    "NEWSTATUS": {
+      "type": "string",
+      "default": "unassigned"
+    },
+    "CANCELCOMMENT": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

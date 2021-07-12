@@ -1,0 +1,32 @@
+{
+  "name": "tbl_s_planmemos",
+  "plural": "tbl_s_planmemos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "planid": {
+      "type": "string"
+    },
+    "plantitle": {
+      "type": "string"
+    },
+    "memogroup": {
+      "type": "string"
+    },
+    "updateby": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

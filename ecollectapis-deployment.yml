@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecollectapis
+  labels:
+    app: ecollectapis
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ecollectapis
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: ecollectapis
+    spec:
+      containers:
+      - name: ecollectapis
+        image: migutak/ecollectapis:latest
+        ports:
+        - containerPort: 8000
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: DB_HOST
+          value: "192.168.0.12"
+        - name: DB_PORT
+          value: "1521"
+        - name: DB_USER
+          value: "ecol"
+        - name: DB_PASSWORD
+          value: "ecol"
+        - name: DB_DATABASE
+          value: "ORCLCDB.localdomain"
+        resources:
+          requests:
+            memory: "2Gi"
+            cpu: "500m"
+          limits:
+            memory: "4Gi"
+            cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ecollectapis-service
+spec:
+  selector:
+    app: ecollectapis
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+      nodePort: 30010
+  type: NodePort

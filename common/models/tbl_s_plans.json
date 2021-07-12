@@ -1,0 +1,26 @@
+{
+  "name": "tbl_s_plans",
+  "plural": "tbl_s_plans",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "planid": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "plantitle": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,54 @@
+{
+  "name": "cards_watch_static",
+  "plural": "cards_watch_static",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cardacct": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "oracle": {
+        "columnName": "CARDACCT",
+        "dataType": "VARCHAR",
+        "dataLength": 40,
+        "nullable": "N"
+      }
+    },
+    "lastactiondate": {
+      "type": "string"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "excuse": {
+      "type": "string"
+    },
+    "reviewdate": {
+      "type": "string"
+    },
+    "cmdstatus": {
+      "type": "string"
+    },
+    "routetostate": {
+      "type": "string"
+    },
+    "rfdother": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "static": {
+      "type": "hasOne",
+      "model": "cards_watch_stage",
+      "foreignKey": "cardacct",
+      "primaryKey": "cardacct"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

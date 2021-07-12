@@ -1,0 +1,47 @@
+{
+  "name": "tbl_earlywarningsign",
+  "plural": "tbl_earlywarningsign",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "DS_ACCOUNTNAME": {
+      "type": "string",
+      "required": true
+    },
+    "DS_CUSTOMERNUMBER": {
+      "type": "number",
+      "required": false
+    },
+    "CD_ARO": {
+      "type": "string",
+      "required": true
+    },
+    "CD_BRANCH": {
+      "type": "number",
+      "required": true
+    },
+    "DPD": {
+      "type": "number",
+      "required": true
+    },
+    "PREDICTED_DEFAULT_PROB": {
+      "type": "number",
+      "required": true
+    },
+     "PREDICTED_DEFAULT": {
+      "type": "number",
+      "required": true
+    },
+     "REPORT_DATE": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

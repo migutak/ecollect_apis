@@ -1,0 +1,72 @@
+{
+  "name": "demandshistory",
+  "plural": "demandshistory",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "accnumber": {
+      "type": "string"
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string",
+      "required": true
+    },
+    "datesent": {
+      "type": "date"
+    },
+    "filepath": {
+      "type": "string"
+    },
+    "filename": {
+      "type": "string"
+    },
+    "byemail": {
+      "type": "string"
+    },
+    "byphysical": {
+      "type": "string"
+    },
+    "bypost": {
+      "type": "string"
+    },
+    "demand": {
+      "type": "string"
+    },
+    "customeremail": {
+      "type": "string"
+    },
+    "sendemail": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "string"
+    },
+    "reissued": {
+      "type": "string"
+    },
+    "guarantorsno": {
+      "type": "number"
+    },
+    "guarantorsemail": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

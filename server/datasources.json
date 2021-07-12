@@ -1,0 +1,12 @@
+{
+  "oracle": {
+    "host": "localhost",
+    "port": 1521,
+    "database": "ecol",
+    "username": "ecol",
+    "password": "ecol",
+    "name": "oracle",
+    "connector": "oracle",
+    "maxOfflineRequests": 20
+  }
+}

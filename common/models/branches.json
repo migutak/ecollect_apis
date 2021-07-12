@@ -1,0 +1,63 @@
+{
+  "name": "branches",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "branchcode": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "branchname": {
+      "type": "string",
+      "required": true
+    },
+    "branchemail": {
+      "type": "string",
+      "required": true
+    },
+    "manager": {
+      "type": "string"
+    },
+    "regagribusiness": {
+      "type": "string"
+    },
+    "regassetfinance": {
+      "type": "string"
+    },
+    "regcorporate": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "regipf": {
+      "type": "string"
+    },
+    "regmicrocredit": {
+      "type": "string"
+    },
+    "regmortage": {
+      "type": "string"
+    },
+    "regpbb": {
+      "type": "string"
+    },
+    "regportfolio": {
+      "type": "string"
+    },
+    "regsacco": {
+      "type": "string"
+    },
+    "regsme": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

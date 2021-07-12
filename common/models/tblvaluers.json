@@ -1,0 +1,69 @@
+{
+  "name": "tblvaluers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "string",
+      "id": true
+    },
+    "CUSTNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "ACCNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "CUSTNAME": {
+      "type": "string"
+    },
+    "AROCODE": {
+      "type": "string"
+    },
+    "FILENO": {
+      "type": "string"
+    },
+    "PROPERTYNO": {
+      "type": "string"
+    },
+    "ACCBALANCE": {
+      "type": "string"
+    },
+    "VEHICLEMAKE": {
+      "type": "string"
+    },
+    "REGOWNER": {
+      "type": "string"
+    },
+    "OWNERSHIP": {
+      "type": "string"
+    },
+    "DATEINPUT": {
+      "type": "date"
+    },
+    "OWNER": {
+      "type": "string"
+    },
+    "STAGEDATE": {
+      "type": "date"
+    },
+    "NEWSTATUS": {
+      "type": "string",
+      "default": "unassigned"
+    },
+    "YARD": {
+      "type": "string"
+    },
+    "CANCELCOMMENT": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

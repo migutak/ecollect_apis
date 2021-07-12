@@ -1,0 +1,100 @@
+{
+  "name": "watch_stage",
+  "plural": "watch_stage",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "scope": {
+    "include": [
+      "watch",
+      "guarantors"
+    ]
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "custname": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "oustbalance": {
+      "type": "string"
+    },
+    "repaymentamount": {
+      "type": "string"
+    },
+    "repaymentdate": {
+      "type": "string"
+    },
+    "productcode": {
+      "type": "number"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "branchcode": {
+      "type": "number"
+    },
+    "settleaccno": {
+      "type": "number"
+    },
+    "settleaccbal": {
+      "type": "number"
+    },
+    "addressline1": {
+      "type": "number"
+    },
+    "town": {
+      "type": "string"
+    },
+    "celnumber": {
+      "type": "number"
+    },
+    "telnumber": {
+      "type": "string"
+    },
+    "emailaddress": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "nationid": {
+      "type": "string"
+    },
+    "deptcode": {
+      "type": "string"
+    },
+    "employer": {
+      "type": "string"
+    },
+    "employerno": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "watch": {
+      "type": "hasOne",
+      "model": "watch_static",
+      "foreignKey": "accnumber"
+    },
+    "guarantors": {
+      "type": "hasMany",
+      "model": "guarantordetails",
+      "foreignKey": "accnumber"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

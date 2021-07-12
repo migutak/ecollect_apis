@@ -1,0 +1,83 @@
+{
+  "name": "mcoopcash_stage",
+  "plural": "mcoopcash_stage",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "loanaccnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "clientname": {
+      "type": "string"
+    },
+    "loanamount": {
+      "type": "number"
+    },
+    "phonenumber": {
+      "type": "string"
+    },
+    "idnumber": {
+      "type": "string"
+    },
+    "interest": {
+      "type": "number"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "repaymentamount": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
+    },
+    "employer": {
+      "type": "string"
+    },
+    "amountdisbursed": {
+      "type": "string"
+    },
+    "dateopen": {
+      "type": "string"
+    },
+    "loan_type": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "disbursaldate": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "arrears_category": {
+      "type": "string"
+    },
+    "lastpaymentdate": {
+      "type": "string"
+    },
+    "duedate": {
+      "type": "string"
+    },
+    "loanstatus": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "mcoopcash_static": {
+      "type": "hasOne",
+      "model": "mcoopcash_static",
+      "foreignKey": "loanaccnumber"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

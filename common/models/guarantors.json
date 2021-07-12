@@ -1,0 +1,32 @@
+{
+  "name": "guarantors",
+  "plural": "guarantors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "accnumber": {
+      "type": "string"
+    },
+    "custnumber": {
+      "type": "string",
+      "default": "nationid"
+    },
+    "nationid": {
+      "type": "string"
+    },
+    "guarantorname": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

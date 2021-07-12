@@ -1,0 +1,25 @@
+FROM oraclelinux:7-slim
+
+ADD oracle-instantclient*.rpm /tmp/
+
+RUN yum -y install curl
+RUN curl --silent --location https://rpm.nodesource.com/setup_10.x | bash -
+RUN yum -y install nodejs
+RUN npm install pm2 -g
+
+RUN  yum -y install /tmp/oracle-instantclient*.rpm && \
+     rm -rf /var/cache/yum && \
+     rm -f /tmp/oracle-instantclient*.rpm && \
+     echo /usr/lib/oracle/18.5/client64/lib > /etc/ld.so.conf.d/oracle-instantclient18.5.conf && \
+     ldconfig
+
+ENV PATH=$PATH:/usr/lib/oracle/18.5/client64/bin
+
+RUN mkdir -p /app
+RUN mkdir -p /app/ecollect_apis
+COPY . /app/ecollect_apis
+WORKDIR /app/ecollect_apis
+RUN npm install
+EXPOSE 8000
+
+CMD ["pm2-runtime", "ecosystem.config.js"]

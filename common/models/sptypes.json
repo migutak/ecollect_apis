@@ -1,0 +1,52 @@
+{
+  "name": "sptypes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "SPTITLE": {
+      "type": "string",
+      "required": true,
+      "id": true
+    },
+    "CONTACTPERSON": {
+      "type": "string",
+      "required": true
+    },
+    "TELEPHONE": {
+      "type": "string",
+      "required": false
+    },
+    "SPCODE": {
+      "type": "string"
+    },
+    "STARTDATE": {
+      "type": "string"
+    },
+    "ACCNUMBER": {
+      "type": "string"
+    },
+    "COVERAGE": {
+      "type": "string"
+    },
+    "ADDRESS": {
+      "type": "string",
+      "default": "N"
+    },
+    "ENDOFINDEMNITY": {
+      "type": "string"
+    },
+    "EMAIL": {
+      "type": "string"
+    },
+    "ACTIVE": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

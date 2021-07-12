@@ -1,0 +1,94 @@
+{
+  "name": "tbldebtcollectors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "string",
+      "id": true
+    },
+    "CUSTNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "ACCNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "CUSTNAME": {
+      "type": "string"
+    },
+    "LOANSETTLEMENTACC": {
+      "type": "string"
+    },
+    "FILENO": {
+      "type": "string"
+    },
+    "ACCBALANCE": {
+      "type": "string"
+    },
+    "CANCELCOMMENT": {
+      "type": "string"
+    },
+    "REGION": {
+      "type": "string",
+      "default": "NAIROBI"
+    },
+    "AROCODE": {
+      "type": "string"
+    },
+    "ASSIGNEDBY": {
+      "type": "string"
+    },
+    "SERVICEPROVIDER": {
+      "type": "string"
+    },
+    "REMARKS": {
+      "type": "string"
+    },
+    "STATUS": {
+      "type": "string"
+    },
+  "STAGEDATE": {
+    "type": "date"
+  },
+    "DATERECALLED": {
+      "type": "date"
+    },
+    "DATEOFINSTR": {
+      "type": "date"
+    },
+    "FOLLOWUPDATE": {
+      "type": "date"
+    },
+  "DATEINPUT": {
+    "type": "date"
+  },
+"OWNER": {
+"type": "string"
+},
+    "SUBMITTEDBY": {
+      "type": "string"
+    },
+    "UPDATEDBY": {
+      "type": "string"
+    },
+"TOWN": {
+"type": "string"
+},
+"ADDRESS": {
+"type": "string"
+},
+"NEWSTATUS": {
+"type": "string",
+  "default": "unassigned"
+}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

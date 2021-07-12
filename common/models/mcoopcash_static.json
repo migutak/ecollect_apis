@@ -1,0 +1,59 @@
+{
+  "name": "mcoopcash_static",
+  "plural": "mcoopcash_static",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "loanaccnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "cmdstatus": {
+      "type": "string"
+    },
+    "excuse": {
+      "type": "string"
+    },
+    "datereceived": {
+      "type": "date"
+    },
+    "excuse_other": {
+      "type": "string"
+    },
+    "accplan": {
+      "type": "string"
+    },
+    "actiondate": {
+      "type": "date"
+    },
+    "routetostate": {
+      "type": "string"
+    },
+    "branchstatus": {
+      "type": "string"
+    },
+    "reviewdate": {
+      "type": "date"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "curing": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "guarantors": {
+      "type": "hasOne",
+      "model": "mcoopcash_stage",
+      "foreignKey": "loanaccnumber"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

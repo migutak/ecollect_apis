@@ -1,0 +1,53 @@
+{
+  "name": "tblyards",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "string",
+      "id": true
+    },
+    "CUSTNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "ACCNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "CUSTNAME": {
+      "type": "string"
+    },
+    "AROCODE": {
+      "type": "string"
+    },
+    "FILENO": {
+      "type": "string"
+    },
+    "ACCBALANCE": {
+      "type": "string"
+    },
+    "VEHICLEMAKE": {
+      "type": "string"
+    },
+    "VEHICLEREGNO": {
+      "type": "string"
+    },
+    "DATEINPUT": {
+      "type": "date"
+    },
+    "OWNER": {
+      "type": "string"
+    },
+    "STAGEDATE": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

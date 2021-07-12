@@ -1,0 +1,304 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "sms": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "demandsdue": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "demandsduecc": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "demandsettings": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "demandshistory": {
+    "dataSource": "oracle",
+    "public": true
+  },
+   "tbl_earlywarningsign": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "notehis": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "cards_stage": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "qcards": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_q_all": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "watch_stage": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_smstemplate": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "guarantors": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "sptypes": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "guarantordetails": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "guarantorletters": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblusers": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "permissionsettings": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "uploads": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "activitylogs": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "cmdstatus": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "branchstatus": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_portfolio_static": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "ptps": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "teles": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "reminderalerts": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblcard_static": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "global_letter_settings": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "autoletters": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "mcoopcash_static": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "mcoopcash_stage": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "customersuspensions": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tqall": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "qall": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "activitylog": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "cure": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "party": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "excuse": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "excusedetailed": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "collectoraction": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "deptcollateral": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "notifications": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "qallcards": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "memos": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tcards": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "branches": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "cards_watch_stage": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "cards_watch_static": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "watch_static": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_s_plans": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_s_actions": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_s_plan_actions": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_s_account_plans": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_s_planmemos": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_s_accounts": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_remedialofferings": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_customerproposals": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_ability": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbldebtcollectors": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblreminders": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblmarketors": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_actions": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "qview": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_swot": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_problemdefinition": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_background": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblinvestigators": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_ptpplans": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "custview": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblvaluers": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblyards": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "newinsurance": {
+    "dataSource": "oracle",
+    "public": true
+  }
+}

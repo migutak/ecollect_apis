@@ -1,0 +1,36 @@
+{
+  "name": "qview",
+  "plural": "qview",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "productcode": {
+      "type": "string"
+    },
+    "oustbalance": {
+      "type": "number"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "nationid": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "excuse",
+  "plural": "excuse",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "excuse": {
+      "type": "string",
+      "required": true
+    },
+    "disabled": {
+      "type": "string",
+      "required": false
+    },
+    "lastupdate": {
+      "type": "date",
+      "required": false,
+      "default": "$now"
+    },
+    "lastupdateby": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

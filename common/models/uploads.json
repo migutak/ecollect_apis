@@ -1,0 +1,55 @@
+{
+  "name": "uploads",
+  "plural": "uploads",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "destpath": {
+      "type": "string"
+    },
+    "filesize": {
+      "type": "string"
+    },
+    "filetype": {
+      "type": "string"
+    },
+    "doctype": {
+      "type": "string"
+    },
+    "filename": {
+      "type": "string"
+    },
+    "docdesc": {
+      "type": "string"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
+    },
+    "userdesctype": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

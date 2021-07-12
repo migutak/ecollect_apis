@@ -1,0 +1,121 @@
+{
+  "name": "tbl_portfolio_static",
+  "plural": "tbl_portfolio_static",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "fileno": {
+      "type": "string"
+    },
+    "datereceived": {
+      "type": "string"
+    },
+    "dateallocated": {
+      "type": "string"
+    },
+    "tocmd": {
+      "type": "string"
+    },
+    "section": {
+      "type": "number"
+    },
+    "collectionstatus": {
+      "type": "string"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "reviewdate": {
+      "type": "date"
+    },
+    "excuse": {
+      "type": "string"
+    },
+    "routetostate": {
+      "type": "string"
+    },
+    "rts": {
+      "type": "string"
+    },
+    "rtsdate": {
+      "type": "string"
+    },
+    "rtsexpecteddate": {
+      "type": "string"
+    },
+    "rtsreturndate": {
+      "type": "string"
+    },
+    "sbu": {
+      "type": "string"
+    },
+    "typeoffacility": {
+      "type": "string"
+    },
+    "natureofbusiness": {
+      "type": "string"
+    },
+    "facilitypurpose": {
+      "type": "string"
+    },
+    "cmdstatus": {
+      "type": "string"
+    },
+    "branchcode": {
+      "type": "string"
+    },
+    "actiondate": {
+      "type": "date"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "curing": {
+      "type": "string"
+    },
+    "excuse_other": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "accplan": {
+      "type": "string"
+    },
+    "colofficer_sec": {
+      "type": "string"
+    },
+    "regionalcolofficer": {
+      "type": "string"
+    },
+    "lastactiondate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "guarantors": {
+      "type": "hasMany",
+      "model": "guarantordetails",
+      "foreignKey": "accnumber"
+    },
+    "demandsdues": {
+      "type": "hasMany",
+      "model": "demandsdue",
+      "foreignKey": "accnumber"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

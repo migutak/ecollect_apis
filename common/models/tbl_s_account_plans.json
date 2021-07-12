@@ -1,0 +1,41 @@
+{
+  "name": "tbl_s_account_plans",
+  "plural": "tbl_s_account_plans",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "accnumber": {
+      "type": "string"
+    },
+    "planid": {
+      "type": "string"
+    },
+    "actionid": {
+      "type": "string"
+    },
+    "actiontitle": {
+      "type": "string"
+    },
+    "updateby": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "string"
+    },
+    "datecompleted": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

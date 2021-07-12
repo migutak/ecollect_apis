@@ -1,0 +1,36 @@
+{
+  "name": "custview",
+  "plural": "custview",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "PTPID": {
+      "type": "number",
+      "id": true
+    },
+    "ACCNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "PTPAMOUNT": {
+      "type": "number"
+    },
+    "PTPDATE": {
+      "type": "date"
+    },
+    "PTPOWNER": {
+      "type": "string"
+    },
+    "MET": {
+      "type": "string",
+      "default": "N"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,153 @@
+{
+  "name": "tcards",
+  "plural": "tcards",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cardnumber": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "oracle": {
+        "columnName": "CARDNUMBER",
+        "dataType": "VARCHAR",
+        "dataLength": 40,
+        "nullable": "N"
+      }
+    },
+    "accountno": {
+      "type": "string",
+      "required": false
+    },
+    "cardacct": {
+      "type": "string"
+    },
+    "cardname": {
+      "type": "string"
+    },
+    "sqnumber": {
+      "type": "number"
+    },
+    "marital": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "branchstatus": {
+      "type": "string"
+    },
+    "exppmnt": {
+      "type": "number"
+    },
+    "limit": {
+      "type": "number"
+    },
+    "prevdebt": {
+      "type": "number"
+    },
+    "cycle": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "emailupdate": {
+      "type": "string"
+    },
+    "addressupdate": {
+      "type": "string"
+    },
+    "ageinmonths": {
+      "type": "number"
+    },
+    "daysinarrears": {
+      "type": "number"
+    },
+    "lastpaymentdate": {
+      "type": "string"
+    },
+    "duedate": {
+      "type": "string"
+    },
+    "datedisbursed": {
+      "type": "string"
+    },
+    "datesuspended": {
+      "type": "string"
+    },
+    "salary": {
+      "type": "string"
+    },
+    "excuse": {
+      "type": "string"
+    },
+    "accplan": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "routetostate": {
+      "type": "string"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "rpcode": {
+      "type": "string"
+    },
+    "cmdstatus": {
+      "type": "string"
+    },
+    "empstatus": {
+      "type": "string"
+    },
+    "fileno": {
+      "type": "string"
+    },
+    "reviewdate": {
+      "type": "date"
+    },
+    "basesupp": {
+      "type": "string"
+    },
+    "collectionstatus": {
+      "type": "string"
+    },
+    "datereceived": {
+      "type": "string"
+    },
+    "employer": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "primary": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "nationid": {
+      "type": "string"
+    },
+    "outbalance": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,66 @@
+{
+  "name": "tblmarketors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "string",
+      "id": true
+    },
+    "CUSTNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "ACCNUMBER": {
+      "type": "string",
+      "required": true
+    },
+    "CUSTNAME": {
+      "type": "string"
+    },
+    "AROCODE": {
+      "type": "string"
+    },
+    "FILENO": {
+      "type": "string"
+    },
+    "PROPERTYNO": {
+      "type": "string"
+    },
+    "ACCBALANCE": {
+      "type": "string"
+    },
+    "OPENMARKETVALUE": {
+      "type": "string"
+    },
+    "FORCEDSALEVALUE": {
+      "type": "string"
+    },
+    "OWNERSHIP": {
+      "type": "string"
+    },
+    "DATEINPUT": {
+      "type": "date"
+    },
+    "OWNER": {
+      "type": "string"
+    },
+    "STAGEDATE": {
+      "type": "date"
+    },
+    "NEWSTATUS": {
+      "type": "string",
+      "default": "unassigned"
+    },
+    "CANCELCOMMENT": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
