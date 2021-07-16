@@ -356,5 +356,13 @@
   "tbl_ipf_details": {
     "dataSource": "oracle",
     "public": true
+  },
+  "pmt_insurance": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "excusedetailed": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

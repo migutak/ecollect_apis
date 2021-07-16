@@ -90,6 +90,15 @@
         "dataScale": null,
         "nullable": "Y"
       }
+    },
+    "updateBy": {
+      "type": "string"
+    },
+    "dateofEntry": {
+      "type": "date"
+    },
+    "dateofLastUpdate": {
+      "type": "date"
     }
   },
   "validations": [],

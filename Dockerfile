@@ -28,8 +28,8 @@ RUN npm install --production
 COPY --chown=node . .
 
 # Bind to all network interfaces so that it can be mapped to the host OS
-ENV HOST=0.0.0.0 PORT=8000
+ENV HOST=0.0.0.0 PORT=8100
 
 EXPOSE ${PORT}
 CMD [ "node", "." ]
-# docker build -t migutak/ecollect_apis:4.2 .
+# docker build -t migutak/ecollect_apis:4.4 .

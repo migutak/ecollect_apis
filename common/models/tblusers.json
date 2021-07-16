@@ -52,9 +52,6 @@
       "type": "string",
       "default": "N"
     },
-    "loked": {
-      "type": "string"
-    },
     "email": {
       "type": "string"
     },
@@ -87,7 +84,7 @@
   "mixins": {
     "Rediscache": {
       "client": {
-        "host": "ecollectweb.co-opbank.co.ke",
+        "host": "157.245.253.243",
         "password": ""
       }
     }      
