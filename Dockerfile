@@ -1,35 +1,29 @@
-FROM oraclelinux:7-slim as builder
+FROM oraclelinux:8-slim
 
-RUN  yum -y install oracle-release-el7 oracle-nodejs-release-el7 && \
-     yum-config-manager --disable ol7_developer_EPEL && \
-     yum -y install oracle-instantclient19.3-basiclite nodejs && \
-     rm -rf /var/cache/yum
+LABEL "provider"="Oracle"                                               \
+  "issues"="https://github.com/oracle/docker-images/issues"
 
-# Get a new image
-FROM node:12-buster-slim
+ARG release=19
+ARG update=9
 
-# Copy the Instant Client libraries, licenses and config file from the previous image
-COPY --from=builder /usr/lib/oracle /usr/lib/oracle
-COPY --from=builder /usr/share/oracle /usr/share/oracle
-COPY --from=builder /etc/ld.so.conf.d/oracle-instantclient.conf /etc/ld.so.conf.d/oracle-instantclient.conf
-
-RUN apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade && apt-get install -y libaio1 && \
-  apt-get -y autoremove && apt-get -y clean && \
-  ldconfig
+RUN  microdnf install oracle-release-el8 && \
+  microdnf install oracle-instantclient${release}.${update}-basic oracle-instantclient${release}.${update}-devel oracle-instantclient${release}.${update}-sqlplus && \
+  microdnf install nodejs &&\
+  microdnf install iputils telnet -y &&\
+  microdnf clean all
 
 #RUN useradd -ms /bin/bash  node
 
 WORKDIR /home/node/app
-RUN chown node:node -R /home/node/app
-USER node
+
 # Install app dependencies
-COPY --chown=node package*.json ./
+COPY package*.json ./
 RUN npm install --production
-COPY --chown=node . .
+COPY . .
 
 # Bind to all network interfaces so that it can be mapped to the host OS
-ENV HOST=0.0.0.0 PORT=8100
+ENV HOST=0.0.0.0 PORT=8000
 
 EXPOSE ${PORT}
 CMD [ "node", "." ]
-# docker build -t migutak/ecollect_apis:4.4 .
+# docker build -t migutak/ecollect_apis:5.0 .

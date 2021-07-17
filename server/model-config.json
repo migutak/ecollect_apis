@@ -297,6 +297,10 @@
     "dataSource": "oracle",
     "public": true
   },
+  "tbl_earlywarningsign": {
+    "dataSource": "oracle",
+    "public": true
+  },
   "tbl_writeoffs": {
     "dataSource": "oracle",
     "public": true
