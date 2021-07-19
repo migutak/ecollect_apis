@@ -1,0 +1,56 @@
+{
+  "name": "notehis_changes_tracker",
+  "plural": "notehis_changes_tracker",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "reasonforchanging": {
+      "type": "string",
+      "required": true
+    },
+     "reasonforchanging": {
+      "type": "string",
+      "required": true
+    },
+     "previousreason": {
+      "type": "string",
+      "required": true
+    },
+     "changedby": {
+      "type": "string",
+      "required": true
+    },
+     "datechanged": {
+      "type": "date",
+      "required": true
+    },
+    "currentreason": {
+      "type": "string",
+      "required": true
+    },
+    "currentreasondetails": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
