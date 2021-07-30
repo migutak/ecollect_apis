@@ -7,7 +7,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "excuseid": {
+    "id": {
       "type": "number",
       "id": true,
       "required": false
@@ -16,9 +16,17 @@
       "type": "string",
       "required": true
     },
-    "active": {
+    "disabled": {
       "type": "string",
-      "required": true
+      "required": false
+    },
+    "lastupdate": {
+      "type": "date",
+      "required": false
+    },
+    "lastupdateby": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],

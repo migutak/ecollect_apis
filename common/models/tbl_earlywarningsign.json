@@ -7,20 +7,87 @@
     "validateUpsert": true
   },
   "properties": {
-    "DS_ACCNUMBER": {
+    "CD_ACCOUNT": {
       "type": "string",
-      "required": true,
-      "id": true
+      "required": true
+    },
+    "CUSTOMER_ID": {
+      "type": "number",
+      "required": false
+    },
+    "CD_ARO": {
+      "type": "string",
+      "required": true
     },
     "DS_ACCOUNTNAME": {
       "type": "string",
       "required": true
     },
-    "DS_CUSTOMERNUMBER": {
-      "type": "string",
-      "required": false
+    "ACCOUNT_LOAN_BALANCE": {
+      "type": "number",
+      "required": true
     },
-    "CD_ARO": {
+    "NUM_LOANS": {
+      "type": "number",
+      "required": true
+    },
+     "TOTAL_BALANCE_LOANS": {
+      "type": "string",
+      "required": true
+    },
+     "LOAN_AMOUNT": {
+      "type": "string",
+      "required": true
+    },
+    "MAX_DAYS_OVERDUE": {
+      "type": "number",
+      "required": true
+    },
+    "BALANCE_OVER_LOAN": {
+      "type": "string",
+      "required": true
+    },
+    "BALANCE_EOM": {
+      "type": "string",
+      "required": true
+    },
+    "CREDIT_MINUS_DEBIT": {
+      "type": "string",
+      "required": true
+    },
+    "VL_MOVEMENT": {
+      "type": "string",
+      "required": true
+    },
+    "CREDIT_COUNT": {
+      "type": "string",
+      "required": true
+    },
+    "DEBIT_COUNT": {
+      "type": "string",
+      "required": true
+    },
+    "BALANCE_DIFF": {
+      "type": "string",
+      "required": true
+    },
+    "LOAN_AMOUNT_DIFF": {
+      "type": "string",
+      "required": true
+    },
+    "DEBIT_OVER_LOAN": {
+      "type": "string",
+      "required": true
+    },
+    "SECTOR": {
+      "type": "string",
+      "required": true
+    },
+    "BANKER": {
+      "type": "string",
+      "required": true
+    },
+    "BANKER_EMAIL": {
       "type": "string",
       "required": true
     },
@@ -28,26 +95,34 @@
       "type": "string",
       "required": true
     },
+    "BRANCH_MANAGER": {
+      "type": "string",
+      "required": true
+    },
+    "BRANCH_MANAGER_EMAIL": {
+      "type": "string",
+      "required": true
+    },
+    "DS_REGION_NAME": {
+      "type": "string",
+      "required": true
+    },
     "DPD": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "PREDICTED_DEFAULT_PROB": {
       "type": "number",
       "required": true
     },
-     "PREDICTED_DEFAULT": {
+    "PREDICTED_DEFAULT": {
       "type": "number",
       "required": true
     },
      "REPORT_DATE": {
       "type": "string",
       "required": true
-    },
-    "COLLECTIONS": {
-     "type": "number",
-     "required": true
-   }
+    }
   },
   "validations": [],
   "relations": {},

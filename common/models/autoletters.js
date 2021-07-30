@@ -5,7 +5,7 @@ module.exports = function(autoletters) {
 	autoletters.insertorupdate = async (msg, cb) => {
         try {
 		    let result = await autoletters.find({where: { and: [{letterid: msg.letterid}, {memogroup: msg.memogroup}, {daysinarr: msg.daysinarr}]}});
-		    console.log(result.length);
+		   
         	if (result.length > 0) {
         		msg.id = result[0].id;
         		console.log(msg);

@@ -8,9 +8,9 @@
   },
   "properties": {
     "collectoractionid": {
-      "type": "number",
+      "type": "string",
       "id": true,
-      "required": false
+      "required": true
     },
     "collectoraction": {
       "type": "string",
