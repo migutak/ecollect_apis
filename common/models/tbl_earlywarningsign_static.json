@@ -1,40 +1,31 @@
 {
-  "name": "tbl_ipf_details",
-  "plural": "tbl_ipf_details",
+  "name": "TBL_EARLYWARNINGSIGN_STATIC",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "accnumber": {
+    "ACCNUMBER": {
       "type": "string",
       "id": true,
       "required": true
     },
-    "customercode": {
+    "EXCUSE": {
+      "type": "string",
+      "required": false
+    },
+    "LASTACTIONDATE": {
       "type": "string"
     },
-    "insurance_company": {
+    "REVIEWDATE": {
       "type": "string"
     },
-    "broker_agent": {
+    "RFDOTHER": {
       "type": "string"
     },
-    "policynumber": {
+    "ROUTETOSTATE": {
       "type": "string"
-    },
-    "typeofcover": {
-      "type": "string"
-    },
-    "policystartdate": {
-      "type": "string"
-    },
-    "policyenddate": {
-      "type": "string"
-    },
-    "stagedate": {
-      "type": "date"
     }
   },
   "validations": [],

@@ -37,7 +37,7 @@
         "nullable": "N"
       }
     },
-    "action": {
+    "collectoraction": {
       "type": "string",
       "oracle": {
         "columnName": "ACTION",
@@ -83,7 +83,16 @@
         "nullable": "Y"
       }
     },
-    "notemade": {
+    "ptpdate": {
+      "type": "string",
+      "oracle": {
+        "columnName": "PROMISEDATE",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "collectornote": {
       "type": "string",
       "oracle": {
         "columnName": "NOTEMADE",
@@ -110,10 +119,28 @@
         "nullable": "Y"
       }
     },
+    "reasondetails": {
+      "type": "string",
+      "oracle": {
+        "columnName": "REASONDETAILS",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
+    },
     "cmdstatus": {
       "type": "string",
       "oracle": {
         "columnName": "CMDSTATUS",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "branchstatus": {
+      "type": "string",
+      "oracle": {
+        "columnName": "BRANCHSTATUS",
         "dataType": "VARCHAR2",
         "dataLength": 40,
         "nullable": "Y"
@@ -173,6 +200,33 @@
         "nullable": "Y"
       }
     },
+    "restructure": {
+      "type": "string",
+      "oracle": {
+        "columnName": "RESTRUCTURE",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "proposedproduct": {
+      "type": "string",
+      "oracle": {
+        "columnName": "PROPOSEDPRODUCT",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "abilitytopay": {
+      "type": "string",
+      "oracle": {
+        "columnName": "ABILITYTOPAY",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
     "arramount": {
       "type": "number",
       "oracle": {
@@ -200,6 +254,24 @@
         "nullable": "Y"
       }
     },
+    "lastactiondate": {
+      "type": "date",
+      "oracle": {
+        "columnName": "LASTACTIONDATE",
+        "dataType": "DATE",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "closuredate": {
+      "type": "string",
+      "oracle": {
+        "columnName": "CLOSUREDATE",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
     "product": {
       "type": "string",
       "oracle": {
@@ -209,41 +281,59 @@
         "nullable": "Y"
       }
     },
-    "ptpsms": {
+    "hasreasonchanged": {
       "type": "string",
       "oracle": {
-        "columnName": "PTPSMS",
+        "columnName": "HASREASONCHANGED",
         "dataType": "VARCHAR2",
-        "dataLength": 100,
+        "dataLength": 40,
         "nullable": "Y"
       }
     },
-    "ptpsmsnumber": {
+    "reasonforchanging": {
       "type": "string",
       "oracle": {
-        "columnName": "PTPSMSNUMBER",
+        "columnName": "REASONFORCHANGING",
         "dataType": "VARCHAR2",
-        "dataLength": 100,
+        "dataLength": 200,
         "nullable": "Y"
       }
     },
-    "restructure": {
-      "type": "string"
+    "previousreason": {
+      "type": "string",
+      "oracle": {
+        "columnName": "PREVIOUSREASON",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
     },
-    "restructureamount": {
-      "type": "number"
+    "outsbalance": {
+      "type": "string",
+      "oracle": {
+        "columnName": "OUTSBALANCE",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
     },
-    "abilitytopay": {
-      "type": "string"
+    "totalarrears": {
+      "type": "string",
+      "oracle": {
+        "columnName": "TOTALARREARS",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
     },
-    "restructuredate": {
-      "type": "string"
-    },
-    "toemail": {
-      "type": "string"
-    },
-    "toemailaddress": {
-      "type": "string"
+    "daysinarrears": {
+      "type": "string",
+      "oracle": {
+        "columnName": "DAYSINARREARS",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
     }
   },
   "validations": [],

@@ -6,6 +6,14 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "Rediscache": {
+      "client": {
+        "host": "157.245.253.243",
+        "password": ""
+      }
+    }
+  },
   "properties": {
     "username": {
       "type": "string",
@@ -80,13 +88,5 @@
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": {},
-  "mixins": {
-    "Rediscache": {
-      "client": {
-        "host": "157.245.253.243",
-        "password": ""
-      }
-    }      
- }
+  "methods": {}
 }

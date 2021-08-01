@@ -31,11 +31,11 @@
       "type": "number",
       "required": true
     },
-     "TOTAL_BALANCE_LOANS": {
+    "TOTAL_BALANCE_LOANS": {
       "type": "string",
       "required": true
     },
-     "LOAN_AMOUNT": {
+    "LOAN_AMOUNT": {
       "type": "string",
       "required": true
     },
@@ -119,7 +119,7 @@
       "type": "number",
       "required": true
     },
-     "REPORT_DATE": {
+    "REPORT_DATE": {
       "type": "string",
       "required": true
     }

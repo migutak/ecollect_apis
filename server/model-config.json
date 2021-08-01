@@ -372,5 +372,9 @@
   "notehis_changes_tracker": {
     "dataSource": "oracle",
     "public": true
+  },
+  "TBL_EARLYWARNINGSIGN_STATIC": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

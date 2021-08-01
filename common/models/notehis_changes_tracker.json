@@ -24,19 +24,15 @@
       "type": "string",
       "required": true
     },
-     "reasonforchanging": {
+    "previousreason": {
       "type": "string",
       "required": true
     },
-     "previousreason": {
+    "changedby": {
       "type": "string",
       "required": true
     },
-     "changedby": {
-      "type": "string",
-      "required": true
-    },
-     "datechanged": {
+    "datechanged": {
       "type": "date",
       "required": true
     },
