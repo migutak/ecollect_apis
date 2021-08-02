@@ -376,5 +376,9 @@
   "TBL_EARLYWARNINGSIGN_STATIC": {
     "dataSource": "oracle",
     "public": true
+  },
+  "tbl_demand_ageing_settings": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

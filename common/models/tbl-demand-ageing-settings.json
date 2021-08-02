@@ -1,0 +1,41 @@
+{
+  "name": "tbl_demand_ageing_settings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "MEMOGROUP": {
+      "type": "string"
+    },
+    "DAYSINARR": {
+      "type": "number"
+    },
+    "LETTERID": {
+      "type": "string"
+    },
+    "EXPIRYDAYS": {
+      "type": "number"
+    },
+    "STATUS": {
+      "type": "string"
+    },
+    "CREATEDATE": {
+      "type": "date"
+    },
+    "LASTUPDATE": {
+      "type": "string"
+    },
+    "OWNER": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
