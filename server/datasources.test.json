@@ -1,0 +1,12 @@
+{
+  "oracle": {
+    "host": "copkdrdutil2-scan.co-opbank.co.ke",
+    "port": 1560,
+    "database": "ECOLLTST",
+    "password": "L#TTc011",
+    "name": "oracle",
+    "tns": "",
+    "user": "ecol",
+    "connector": "oracle"
+  }
+}
