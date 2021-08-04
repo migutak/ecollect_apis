@@ -9,28 +9,28 @@
     "id": {
       "type": "number"
     },
-    "MEMOGROUP": {
+    "memogroup": {
       "type": "string"
     },
-    "DAYSINARR": {
+    "daysinarr": {
       "type": "number"
     },
-    "LETTERID": {
+    "letterid": {
       "type": "string"
     },
-    "EXPIRYDAYS": {
+    "expirydays": {
       "type": "number"
     },
-    "STATUS": {
+    "status": {
       "type": "string"
     },
-    "CREATEDATE": {
+    "createdate": {
       "type": "date"
     },
-    "LASTUPDATE": {
+    "lastupdate": {
       "type": "string"
     },
-    "OWNER": {
+    "owner": {
       "type": "string"
     }
   },

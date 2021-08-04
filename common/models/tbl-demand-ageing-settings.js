@@ -65,6 +65,7 @@ module.exports = function(Tbldemandageingsettings) {
     	for(let i=0; i<msg.length; i++){
 	        try {
 			    let result = await Tbldemandageingsettings.find({where: { and: [{letterid: msg[i].letterid}, {memogroup: msg[i].memogroup}, {daysinarr: msg[i].daysinarr}]}});
+                console.log(result)
 	        	if (result.length > 0) {
 	        		msg[i].isduplicate = true;
 	        		msg[i].iserror = false;
