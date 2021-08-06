@@ -83,6 +83,9 @@
     },
     "remedialunit": {
       "type": "string"
+    },
+    "arocode": {
+      "type": "string"
     }
   },
   "validations": [],

@@ -257,7 +257,7 @@
     "lastactiondate": {
       "type": "date",
       "oracle": {
-        "columnName": "LASTACTIONDATE",
+        "columnName": "ACTIONDATE",
         "dataType": "DATE",
         "dataLength": 40,
         "nullable": "Y"
