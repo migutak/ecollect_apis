@@ -10,8 +10,7 @@
       "loopback/common/mixins",
       "loopback/server/mixins",
       "../common/mixins",
-      "./mixins",
-      "../node_modules/loopback-redis-cache"
+      "./mixins"
     ]
   },
   "sms": {
@@ -132,10 +131,7 @@
   },
   "tqall": {
     "dataSource": "oracle",
-    "public": true,
-    "mixins": {
-      "Rediscache": {}
-    }
+    "public": true
   },
   "qall": {
     "dataSource": "oracle",
@@ -378,6 +374,10 @@
     "public": true
   },
   "tbl_demand_ageing_settings": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_earlywarningsign_static_audit": {
     "dataSource": "oracle",
     "public": true
   }

@@ -17,10 +17,6 @@
       "extended": true,
       "limit": "80mb"
     },
-    "redis": {
-      "host": "${REDIS_HOST}",
-      "password": ""
-    },
     "cors": false
   }
 }

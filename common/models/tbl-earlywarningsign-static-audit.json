@@ -1,19 +1,20 @@
 {
-  "name": "TBL_EARLYWARNINGSIGN_STATIC",
+  "name": "tbl_earlywarningsign_static_audit",
+  "plural": "tbl_earlywarningsign_static_audit",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
+    "id": {
+      "type": "number"
+    },
     "accnumber": {
-      "type": "string",
-      "id": true,
-      "required": true
+      "type": "string"
     },
     "careaction": {
-      "type": "string",
-      "required": false
+      "type": "string"
     },
     "lastactiondate": {
       "type": "string"
