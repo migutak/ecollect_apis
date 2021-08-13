@@ -63,6 +63,12 @@
     },
     "guarantorsemail": {
       "type": "string"
+    },
+    "expirydays": {
+      "type": "number"
+    },
+    "expirydate": {
+      "type": "string"
     }
   },
   "validations": [],
