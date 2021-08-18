@@ -40,8 +40,8 @@ module.exports = function (Notehis) {
             next = 10;
         }
         //
-        var total_sql = "Select id,owner,custnumber,accnumber,to_char(notedate) notedate, notesrc,noteimp, notemade, reason from vallnotes where custnumber = '" + custnumber + "' offset " + offset + " rows fetch next " + next + " rows only";
-        ds.connector.query(total_sql, [], function (err, accounts) {
+        var notessql = "Select id,owner,custnumber,accnumber,to_char(notedate) notedate, notesrc,noteimp, notemade, reason from vallnotes where custnumber = '" + custnumber + "' offset " + offset + " rows fetch next " + next + " rows only";
+        ds.connector.query(notessql, [], function (err, accounts) {
             if (err) console.error(err);
             cb(err, accounts);
         })

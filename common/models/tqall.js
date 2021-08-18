@@ -236,13 +236,13 @@ module.exports = function (tqall) {
       limit = 5;
     };
     //
-    var total_sql = "Select count(*) totalviewall from tqall where colofficer = '" + colofficer + "'";
+    var total_sql = "Select count(*) totalviewall from tqall where arocode = '" + colofficer + "'";
     ds.connector.query(total_sql, [], function (err, accounts) {
       if (err) {
         console.error(err);
       } else {
         response.total = accounts[0].TOTALVIEWALL;
-        tqall.find({ where: { colofficer: colofficer }, limit: limit, skip: page }, function (err, data) {
+        tqall.find({ where: { arocode: colofficer }, limit: limit, skip: page }, function (err, data) {
           if (err) console.log(err);
           response.rows = data;
           cb(err, response);
