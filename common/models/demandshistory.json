@@ -69,6 +69,39 @@
     },
     "expirydate": {
       "type": "string"
+    },
+    "lrno": {
+      "type": "string"
+    },
+    "regowner": {
+      "type": "string"
+    },
+    "propertylocation": {
+      "type": "string"
+    },
+    "ownership": {
+      "type": "string"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "branchcode": {
+      "type": "string"
+    },
+    "branchname": {
+      "type": "string"
+    },
+    "colofficeremailaddress": {
+      "type": "string"
+    },
+    "celnumber": {
+      "type": "string"
+    },
+    "custname": {
+      "type": "string"
     }
   },
   "validations": [],

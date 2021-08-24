@@ -334,6 +334,42 @@
         "dataLength": 200,
         "nullable": "Y"
       }
+    },
+    "callbackscheduleflag": {
+      "type": "string",
+      "oracle": {
+        "columnName": "CALLBACKSCHEDULEFLAG",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "scheduledate": {
+      "type": "string",
+      "oracle": {
+        "columnName": "SCHEDULEDATE",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "productclosuredate": {
+      "type": "string",
+      "oracle": {
+        "columnName": "PRODUCTCLOSUREDATE",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "remedialproduct": {
+      "type": "string",
+      "oracle": {
+        "columnName": "REMEDIALPRODUCT",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
     }
   },
   "validations": [],

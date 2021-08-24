@@ -226,6 +226,24 @@
         "dataLength": 40,
         "nullable": "Y"
       }
+    },
+    "callbackscheduleflag": {
+      "type": "string",
+      "oracle": {
+        "columnName": "CALLBACKSCHEDULEFLAG",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "scheduledate": {
+      "type": "string",
+      "oracle": {
+        "columnName": "SCHEDULEDATE",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
     }
   },
   "validations": [],

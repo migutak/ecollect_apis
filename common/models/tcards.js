@@ -292,7 +292,7 @@ module.exports = function(tcards) {
         },
         http: {
           path: '/closed',
-          verb: 'get',
+          verb: 'get', 
         },
       });
 
