@@ -1,0 +1,61 @@
+{
+  "name": "tbl_ipfdatajoined",
+  "plural": "tbl_ipfdatajoined",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "custname": {
+      "type": "string"
+    },
+    "productcode": {
+      "type": "string"
+    },
+    "daysinarr": {
+      "type": "number"
+    },
+    "emailaddress": {
+      "type": "string"
+    },
+    "telnumber": {
+      "type": "string"
+    },
+     "celnumber": {
+      "type": "string"
+    },
+    "policynumber": {
+      "type": "string"
+    },
+    "policystartdate": {
+      "type": "string"
+    },
+    "policyenddate": {
+      "type": "string"
+    },
+    "insurance_company": {
+      "type": "string"
+    },
+    "broker_agent": {
+      "type": "string"
+    },
+    "branchname": {
+      "type": "string"
+    },
+    "loanstartdate": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "acls": [],
+  "methods": {}
+}

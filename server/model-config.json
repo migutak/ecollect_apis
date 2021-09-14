@@ -380,5 +380,12 @@
   "tbl_earlywarningsign_static_audit": {
     "dataSource": "oracle",
     "public": true
+  },"tbl_ipfdatajoined": {
+    "dataSource": "oracle",
+    "public": true
+  }
+  ,"tbl_ipf_cancellations": {
+    "dataSource": "oracle",
+    "public": true
   }
 }
