@@ -45,6 +45,15 @@
     "insuranceemail": {
       "type": "string"
     },
+    "ipfreason": {
+      "type": "string"
+    },
+    "ipfreasondetails": {
+      "type": "string"
+    },
+    "emailaddress": {
+      "type": "string"
+    },
     "insuranceaddress": {
       "type": "string"
     },
