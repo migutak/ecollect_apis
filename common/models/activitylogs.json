@@ -370,6 +370,97 @@
         "dataLength": 40,
         "nullable": "Y"
       }
+    },
+    
+    "custname": {
+      "type": "string",
+      "oracle": {
+        "columnName": "CUSTNAME",
+        "dataType": "VARCHAR2",
+        "dataLength": 250,
+        "nullable": "Y"
+      }
+    },
+    "arocode": {
+      "type": "string",
+      "oracle": {
+        "columnName": "AROCODE",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "rrocode": {
+      "type": "string",
+      "oracle": {
+        "columnName": "RROCODE",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "user_region": {
+      "type": "string",
+      "oracle": {
+        "columnName": "USER_REGION",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "user_branch": {
+      "type": "string",
+      "oracle": {
+        "columnName": "USER_BRANCH",
+        "dataType": "VARCHAR2",
+        "dataLength": 100,
+        "nullable": "Y"
+      }
+    },
+    "user_remedialunit": {
+      "type": "string",
+      "oracle": {
+        "columnName": "USER_REMEDIALUNIT",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "account_region": {
+      "type": "string",
+      "oracle": {
+        "columnName": "ACCOUNT_REGION",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "account_branch": {
+      "type": "string",
+      "oracle": {
+        "columnName": "ACCOUNT_BRANCH",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+    "proposedcureamount": {
+      "type": "number",
+      "oracle": {
+        "columnName": "PROPOSEDCUREAMOUNT",
+        "dataType": "FLOAT",
+        "dataLength": 100,
+        "nullable": "Y"
+      }
+    },
+    "creditgrade": {
+      "type": "string",
+      "oracle": {
+        "columnName": "CREDITGRADE",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
     }
   },
   "validations": [],

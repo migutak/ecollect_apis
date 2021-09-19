@@ -137,10 +137,6 @@
     "dataSource": "oracle",
     "public": true
   },
-  "activitylog": {
-    "dataSource": "oracle",
-    "public": true
-  },
   "cure": {
     "dataSource": "oracle",
     "public": true
