@@ -3,6 +3,41 @@
 module.exports = function(Tblipfcancellations) {
 
 
+
+  Tblipfcancellations.updateipf = function(data, cb) {
+    var ds = Tblipfcancellations.dataSource;
+    //
+    var update_sql = "update tbl_ipf_cancellations set status = '" + data.status + "' where accnumber = '" + data.accnumber + "'";
+    ds.connector.query(update_sql, [], function(err, accounts) {
+      if (err) console.error(err);
+      cb(err, accounts);
+    });
+  };
+
+  Tblipfcancellations.remoteMethod('updateipf', {
+    accepts: {
+      arg: 'data',
+      type: 'object',
+      http: {
+        source: 'body',
+      },
+    },
+    returns: {
+      arg: 'result',
+      type: 'object',
+      root: true,
+    },
+    http: {
+      path: '/updateipf',
+      verb: 'post',
+    },
+  });
+
+
+
+
+
+
   Tblipfcancellations.gridviewall = function(request, cb) {
     var ds = Tblipfcancellations.dataSource;
     const SQL = buildSql(request);
@@ -37,7 +72,7 @@ module.exports = function(Tblipfcancellations) {
 
   function buildSql(request) {
     const selectSql = createSelectSql(request);
-    const fromSql = ' from ecol.tbl_ipf_cancellations ';
+    const fromSql = ' from ecol.tbl_ipf_cancellations where status != \'Reinstatement\'  ';
     const whereSql = createWhereSql(request);
     const limitSql = createLimitSql(request);
 
@@ -52,7 +87,7 @@ module.exports = function(Tblipfcancellations) {
   }
 
   function createSelectSql(request) {
-    // console.log(request)
+    console.log(request)
     const rowGroupCols = request.rowGroupCols;
     const valueCols = request.valueCols;
     const groupKeys = request.groupKeys;
