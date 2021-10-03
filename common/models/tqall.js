@@ -34,7 +34,7 @@ module.exports = function (tqall) {
       limit = 1;
     };
     //
-    var total_sql = "Select count(*) totalviewall from tqall where lower(accnumber||client_name||arocode||rrocode||custnumber||branchname||colofficer||section) like '%" + searchtext.toLowerCase() + "%'";
+    var total_sql = "Select count(accnumber) totalviewall from tqall where lower(accnumber||client_name||arocode||rrocode||custnumber||branchname||colofficer||section) like '%" + searchtext.toLowerCase() + "%'";
     var sql = "Select * from tqall where lower(accnumber||client_name||arocode||rrocode||custnumber||branchname||colofficer||section) like '%" + searchtext.toLowerCase() + "%'";
 
     ds.connector.query(total_sql, [], function (err, accounts) {
