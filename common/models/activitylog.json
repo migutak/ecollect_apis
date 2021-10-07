@@ -84,10 +84,10 @@
       }
     },
     "ptpdate": {
-      "type": "string",
+      "type": "date",
       "oracle": {
         "columnName": "PROMISEDATE",
-        "dataType": "VARCHAR2",
+        "dataType": "DATE",
         "dataLength": 40,
         "nullable": "Y"
       }

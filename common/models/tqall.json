@@ -155,6 +155,9 @@
     },
     "debitaccruedintamount": {
       "type": "number"
+    },
+     "ews": {
+      "type": "string"
     }
   },
   "validations": [],

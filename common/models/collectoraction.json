@@ -7,10 +7,14 @@
     "validateUpsert": true
   },
   "properties": {
-    "collectoractionid": {
+    "id": {
       "type": "number",
       "id": true,
       "required": false
+    },
+    "collectoractionid": {
+      "type": "string",
+      "required": true
     },
     "collectoraction": {
       "type": "string",

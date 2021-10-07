@@ -1,17 +1,16 @@
 {
-  "name": "tbldebtcollectors",
+  "name": "tbl_ipfdatajoined",
+  "plural": "tbl_ipfdatajoined",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "number",
-      "id": true
-    },
     "accnumber": {
-      "type": "string"
+      "type": "string",
+      "id": true,
+      "required": true
     },
     "custnumber": {
       "type": "string"
@@ -19,52 +18,40 @@
     "custname": {
       "type": "string"
     },
-    "arocode": {
+    "productcode": {
       "type": "string"
     },
-    "rrocode": {
+    "daysinarr": {
+      "type": "any"
+    },
+    "emailaddress": {
       "type": "string"
     },
-    "fileno": {
+    "telnumber": {
       "type": "string"
     },
-    "address": {
+     "celnumber": {
       "type": "string"
     },
-    "town": {
+    "policynumber": {
       "type": "string"
     },
-    "accbalance": {
-      "type": "number"
-    },
-    "dateinput": {
-      "type": "date"
-    },
-    "owner": {
+    "policystartdate": {
       "type": "string"
     },
-    "stagedate": {
-      "type": "date"
-    },
-    "region": {
+    "policyenddate": {
       "type": "string"
     },
-    "newstatus": {
+    "insurance_company": {
       "type": "string"
     },
-    "followupcomment": {
+    "broker_agent": {
       "type": "string"
     },
-    "serviceprovider": {
+    "branchname": {
       "type": "string"
     },
-    "dateassigned": {
-      "type": "date"
-    },
-    "loansettlementacc": {
-      "type": "string"
-    },
-    "cancelcomment": {
+    "loanstartdate": {
       "type": "string"
     }
   },

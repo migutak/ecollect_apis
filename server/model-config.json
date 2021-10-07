@@ -17,6 +17,18 @@
     "dataSource": "oracle",
     "public": true
   },
+  "tbl_ipfdatajoined": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_ipf_cancellations": {
+    "dataSource": "oracle",
+    "public": true
+  },
+   "edc_enrollment": {
+    "dataSource": "oracle",
+    "public": true
+  },
   "demandsdue": {
     "dataSource": "oracle",
     "public": true
@@ -30,10 +42,6 @@
     "public": true
   },
   "demandshistory": {
-    "dataSource": "oracle",
-    "public": true
-  },
-   "tbl_earlywarningsign": {
     "dataSource": "oracle",
     "public": true
   },
@@ -62,10 +70,6 @@
     "public": true
   },
   "guarantors": {
-    "dataSource": "oracle",
-    "public": true
-  },
-  "sptypes": {
     "dataSource": "oracle",
     "public": true
   },
@@ -113,10 +117,6 @@
     "dataSource": "oracle",
     "public": true
   },
-  "reminderalerts": {
-    "dataSource": "oracle",
-    "public": true
-  },
   "tblcard_static": {
     "dataSource": "oracle",
     "public": true
@@ -149,10 +149,6 @@
     "dataSource": "oracle",
     "public": true
   },
-  "activitylog": {
-    "dataSource": "oracle",
-    "public": true
-  },
   "cure": {
     "dataSource": "oracle",
     "public": true
@@ -162,10 +158,6 @@
     "public": true
   },
   "excuse": {
-    "dataSource": "oracle",
-    "public": true
-  },
-  "excusedetailed": {
     "dataSource": "oracle",
     "public": true
   },
@@ -245,18 +237,6 @@
     "dataSource": "oracle",
     "public": true
   },
-  "tbldebtcollectors": {
-    "dataSource": "oracle",
-    "public": true
-  },
-  "tblreminders": {
-    "dataSource": "oracle",
-    "public": true
-  },
-  "tblmarketors": {
-    "dataSource": "oracle",
-    "public": true
-  },
   "plan_actions": {
     "dataSource": "oracle",
     "public": true
@@ -277,10 +257,6 @@
     "dataSource": "oracle",
     "public": true
   },
-  "tblinvestigators": {
-    "dataSource": "oracle",
-    "public": true
-  },
   "plan_ptpplans": {
     "dataSource": "oracle",
     "public": true
@@ -289,15 +265,127 @@
     "dataSource": "oracle",
     "public": true
   },
+  "sptypes": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "authextletters": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "extletters": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "writeoffstory": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "vallnotes": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "insurance": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_ipf": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_assetfinance": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_productofferings": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_earlywarningsign": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_writeoffs": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_investigators": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblmarketors": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbldebtcollectors": {
+    "dataSource": "oracle",
+    "public": true
+  },
   "tblvaluers": {
     "dataSource": "oracle",
     "public": true
   },
-  "tblyards": {
+  "tblinvoices": {
     "dataSource": "oracle",
     "public": true
   },
-  "newinsurance": {
+  "tbl_relegations": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "custview_stage": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "customer_stage": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "rollrates": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_allocations_cycle": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_colofficer_memogroups": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblexcuse": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tblexcuse_details": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_ipf_details": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "pmt_insurance": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "excusedetailed": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "notehis_changes_tracker": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "TBL_EARLYWARNINGSIGN_STATIC": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_demand_ageing_settings": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_earlywarningsign_static_audit": {
     "dataSource": "oracle",
     "public": true
   }

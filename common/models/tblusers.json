@@ -75,6 +75,9 @@
     },
     "team": {
       "type": "string"
+    },
+    "arocode": {
+      "type": "string"
     }
   },
   "validations": [],

@@ -280,7 +280,80 @@
         "dataLength": 40,
         "nullable": "Y"
       }
+    },
+     "hasreasonchanged": {
+      "type": "string",
+      "oracle": {
+        "columnName": "HASREASONCHANGED",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "Y"
+      }
+    },
+     "reasonforchanging": {
+      "type": "string",
+      "oracle": {
+        "columnName": "REASONFORCHANGING",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
+    },
+     "previousreason": {
+      "type": "string",
+      "oracle": {
+        "columnName": "PREVIOUSREASON",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
+    },
+     "outsbalance": {
+      "type": "string",
+      "oracle": {
+        "columnName": "OUTSBALANCE",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
+    },
+    "totalarrears": {
+      "type": "string",
+      "oracle": {
+        "columnName": "TOTALARREARS",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
+    },
+    "daysinarrears": {
+      "type": "string",
+      "oracle": {
+        "columnName": "DAYSINARREARS",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
+    },
+     "toemailaddress": {
+      "type": "string",
+      "oracle": {
+        "columnName": "TOEMAILADDRESS",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
+    },
+     "toemail": {
+      "type": "string",
+      "oracle": {
+        "columnName": "TOEMAIL",
+        "dataType": "VARCHAR2",
+        "dataLength": 200,
+        "nullable": "Y"
+      }
     }
+
   },
   "validations": [],
   "relations": {},

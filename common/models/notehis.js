@@ -1,5 +1,5 @@
 'use strict';
-
+const paginate = require('jw-paginate');
 // for activitylog count
 module.exports = function(Notehis) {
   Notehis.total = function(custnumber, cb) {
@@ -157,11 +157,13 @@ module.exports = function(Notehis) {
   });
 
   Notehis.custnotes = function(custnumber, cb) {
+    var response = {};
     var ds = Notehis.dataSource;
         //
-    var total_sql = "Select *  from activitylogs  where  custnumber = '"+ custnumber + "' order by id desc ";
+    var total_sql = "Select *  from notehis  where  custnumber = '"+ custnumber + "' order by id desc ";
     ds.connector.query(total_sql, [], function(err, accounts) {
-      if (err) console.error(err);
+      
+if (err) console.error(err);
       cb(err, accounts);
     });
   };
