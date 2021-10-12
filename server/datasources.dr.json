@@ -1,9 +1,9 @@
 {
   "oracle": {
-    "host": "",
-    "port": 1564,
-    "database": "",
-    "password": "ecol",
+    "host": "172.16.17.69",
+    "port": 1559,
+    "database": "ECOLLECTDR",
+    "password": "L#TTc011",
     "name": "oracle",
     "tns": "",
     "user": "ecol",
