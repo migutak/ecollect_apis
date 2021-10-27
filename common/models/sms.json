@@ -39,6 +39,22 @@
     },
     "stagedate": {
       "type": "date"
+    },
+    "branchname": {
+      "type": "date"
+    },
+    "branchcode": {
+      "type": "string",
+      "default": "N"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "businessunit": {
+      "type": "string"
     }
   },
   "validations": [],
