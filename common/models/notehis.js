@@ -98,7 +98,7 @@ module.exports = function (Notehis) {
     Notehis.allcustnotes = function (custnumber, cb) {
         var ds = Notehis.dataSource;
 
-        var allcustnotes_sql = "Select *  from notehis where custnumber = '" + custnumber + "'";
+        var allcustnotes_sql = "Select *  from vallnotes where custnumber = '" + custnumber + "' order by notedate desc";
 
         ds.connector.query(allcustnotes_sql, [], function (err, accounts) {
             if (err) console.error(err);

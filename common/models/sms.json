@@ -41,7 +41,7 @@
       "type": "date"
     },
     "branchname": {
-      "type": "date"
+      "type": "string"
     },
     "branchcode": {
       "type": "string",
