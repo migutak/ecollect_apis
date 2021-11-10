@@ -379,8 +379,12 @@
   },"tbl_ipfdatajoined": {
     "dataSource": "oracle",
     "public": true
-  }
-  ,"tbl_ipf_cancellations": {
+  },
+  "tbl_ipf_cancellations": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "edc_enrollment": {
     "dataSource": "oracle",
     "public": true
   }
