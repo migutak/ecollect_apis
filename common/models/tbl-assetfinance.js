@@ -36,7 +36,7 @@ module.exports = function(Tblassetfinance) {
     
       function buildSql(request) {
         const selectSql = createSelectSql(request);
-        const fromSql = ' from ecol.tbl_assetfinance ';
+        const fromSql = ' from ecol.tblrepossessions ';
         const whereSql = createWhereSql(request);
         const limitSql = createLimitSql(request);
     
