@@ -1,8 +1,8 @@
----
 apiVersion: v1
 kind: Service
 metadata:
   name: ecollectapis-service
+  namespace:
 spec:
   selector:
     app: ecollectapis
