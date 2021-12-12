@@ -388,4 +388,9 @@
     "dataSource": "oracle",
     "public": true
   }
+  ,
+  "tblmarketers_assigned": {
+    "dataSource": "oracle",
+    "public": true
+  }
 }

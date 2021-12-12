@@ -1,0 +1,41 @@
+{
+  "name": "tblmarketers_assigned",
+  "plural": "tblmarketers_assigned",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "marketername": {
+      "type": "string",
+      "required": true
+    },
+    "dateassigned": {
+      "type": "string",
+      "required": true
+    },
+    "dateexpiry": {
+      "type": "string"
+    },
+    "notemade": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

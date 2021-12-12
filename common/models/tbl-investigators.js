@@ -69,7 +69,7 @@ module.exports = function (Tblinvestigators) {
             return ' select ' + colsToSelect.join(', ');
         }
 
-        return ' select accnumber';
+        return ' select * ';
     }
 
     function createFilterSql(key, item) {
