@@ -32,6 +32,12 @@
     },
     "status": {
       "type": "string"
+    },
+    "casenumber": {
+      "type": "string"
+    },
+    "followupcomment": {
+      "type": "string"
     }
   },
   "validations": [],

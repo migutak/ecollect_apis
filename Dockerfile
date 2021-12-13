@@ -26,5 +26,5 @@ ENV HOST=0.0.0.0 PORT=8000
 
 EXPOSE ${PORT}
 CMD [ "node", "." ]
-# docker build -t migutak/ecollect_apis:5.9.1 .
+# docker build -t migutak/ecollect_apis:5.9.2 .
 
