@@ -38,7 +38,7 @@
       "type": "number"
     },
     "dateinput": {
-      "type": "date"
+      "type": "string"
     },
     "owner": {
       "type": "string"
@@ -66,6 +66,9 @@
     },
     "cancelcomment": {
       "type": "string"
+    },
+    "duedate": {
+      "type": "date"
     }
   },
   "validations": [],
