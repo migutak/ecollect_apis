@@ -36,7 +36,7 @@ module.exports = function(Tblvaluers) {
 
     function buildSql(request) {
         const selectSql = createSelectSql(request);
-        const fromSql = ' from ecol.tblvaluers ';
+        const fromSql = ' from ecol.qalltblvaluers ';
         const whereSql = createWhereSql(request);
         const limitSql = createLimitSql(request);
 

@@ -81,6 +81,15 @@
     },
     "stagedate": {
       "type": "date"
+    },
+    "proptype": {
+      "type": "string"
+    },
+    "regno": {
+      "type": "string"
+    },
+    "carmake": {
+      "type": "string"
     }
   },
   "validations": [],

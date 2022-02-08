@@ -36,7 +36,7 @@ module.exports = function(Tbldebtcollectors) {
 
     function buildSql(request) {
         const selectSql = createSelectSql(request);
-        const fromSql = ' from ecol.tbldebtcollectors ';
+        const fromSql = ' from ecol.qalltbldebtcollectors ';
         const whereSql = createWhereSql(request);
         const limitSql = createLimitSql(request);
 
@@ -69,7 +69,7 @@ module.exports = function(Tbldebtcollectors) {
             return ' select ' + colsToSelect.join(', ');
         }
 
-        return ' select *';
+        return " select id,accnumber,custnumber, CUSTNAME, NEWSTATUS,SERVICEPROVIDER,DATEINPUT,TO_CHAR(DATEASSIGNED,'YYYY-MM-DD') DATEASSIGNED,RROCODE,ACCBALANCE,AROCODE,REGION,duedate,followupcomment ";
     }
 
     function createFilterSql(key, item) {
