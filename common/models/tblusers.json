@@ -78,6 +78,9 @@
     },
     "arocode": {
       "type": "string"
+    },
+    "rrocode": {
+      "type": "string"
     }
   },
   "validations": [],

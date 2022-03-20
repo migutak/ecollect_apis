@@ -69,6 +69,9 @@
     },
     "duedate": {
       "type": "date"
+    },
+    "branchcode": {
+      "type": "date"
     }
   },
   "validations": [],
