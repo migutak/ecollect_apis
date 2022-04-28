@@ -1,0 +1,21 @@
+{
+  "name": "utilizationbranch",
+  "plural": "utilizationbranch",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "region": {
+      "type": "string"
+    },
+    "total": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

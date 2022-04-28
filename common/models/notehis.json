@@ -52,6 +52,10 @@
       "type": "string",
       "required": false
     },
+    "newcustnumber": {
+      "type": "string",
+      "required": false
+    },
     "daysinarrears": {
       "type": "string",
       "required": false

@@ -24,6 +24,21 @@
     "message": {
       "type": "string"
     },
+     "arocode": {
+      "type": "string"
+    },
+     "rrocode": {
+      "type": "string"
+    },
+     "branchname": {
+      "type": "string"
+    },
+     "branchcode": {
+      "type": "string"
+    },
+     "businessunit": {
+      "type": "string"
+    },
     "arrears": {
       "type": "number"
     },

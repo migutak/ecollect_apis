@@ -95,10 +95,10 @@ module.exports = function(Notehis) {
   });
 
   // view all notes per customer and export
-  Notehis.allcustnotes = function(custnumber, cb) {
+  Notehis.allcustnotes = function(custnumber, newcustnumber, cb) {
     var ds = Notehis.dataSource;
 
-    var allcustnotes_sql = "Select *  from notehis where custnumber = '" + custnumber + "'";
+    var allcustnotes_sql = "Select *  from vallnotes where custnumber = '" + custnumber + "' or newcustnumber = '" + newcustnumber + "'";
 
     ds.connector.query(allcustnotes_sql, [], function(err, accounts) {
       if (err) console.error(err);
@@ -107,13 +107,23 @@ module.exports = function(Notehis) {
   };
 
   Notehis.remoteMethod('allcustnotes', {
-    accepts: {
+    accepts: [{
       arg: 'custnumber',
       type: 'string',
       http: {
         source: 'query',
       },
+
     },
+    {
+      arg: 'newcustnumber',
+      type: 'string',
+      http: {
+        source: 'query',
+      },
+
+    },
+    ],
     returns: {
       arg: 'result',
       type: 'object',
@@ -160,10 +170,9 @@ module.exports = function(Notehis) {
     var response = {};
     var ds = Notehis.dataSource;
         //
-    var total_sql = "Select *  from notehis  where  custnumber = '"+ custnumber + "' order by id desc ";
+    var total_sql = "Select *  from notehis  where  custnumber = '" + custnumber + "' order by id desc ";
     ds.connector.query(total_sql, [], function(err, accounts) {
-      
-if (err) console.error(err);
+      if (err) console.error(err);
       cb(err, accounts);
     });
   };

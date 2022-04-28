@@ -1,6 +1,6 @@
 {
-  "name": "uploads",
-  "plural": "uploads",
+  "name": "tbl_emailsent",
+  "plural": "tbl_emailsent",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -8,46 +8,34 @@
   },
   "properties": {
     "id": {
-      "type": "number",
-      "id": true,
-      "required": false
-    },
-    "accnumber": {
       "type": "string",
-      "required": true
+      "id": true
     },
-    "custnumber": {
-      "type": "string",
-      "required": true
-    },
-    "newcustnumber": {
-      "type": "string"
-    },
-    "destpath": {
-      "type": "string"
-    },
-    "filesize": {
-      "type": "string"
-    },
-    "filetype": {
-      "type": "string"
-    },
-    "doctype": {
-      "type": "string"
-    },
-    "filename": {
-      "type": "string"
-    },
-    "docdesc": {
-      "type": "string"
-    },
-    "colofficer": {
-      "type": "string"
-    },
-    "stagedate": {
+    "sentdate": {
       "type": "date"
     },
-    "userdesctype": {
+    "subject": {
+      "type": "string"
+    },
+    "emailaddress": {
+      "type": "string"
+    },
+    "sentby": {
+      "type": "string"
+    },
+    "important": {
+      "type": "string"
+    },
+    "emailcontent": {
+      "type": "string"
+    },
+    "cc": {
+      "type": "string"
+    },
+    "trash": {
+      "type": "string"
+    },
+    "bcc": {
       "type": "string"
     }
   },

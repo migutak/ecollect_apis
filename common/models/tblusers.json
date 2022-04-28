@@ -12,14 +12,15 @@
       "required": true
     },
     "firstname": {
-      "type": "string"
-    },
-    "surname": {
-      "type": "string"
-    },
-    "lastname": {
       "type": "string",
       "required": true
+    },
+    "surname": {
+      "type": "string",
+      "required": true
+    },
+    "middlename": {
+      "type": "string"
     },
     "active": {
       "type": "string",

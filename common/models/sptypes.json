@@ -6,6 +6,11 @@
     "validateUpsert": true
   },
   "properties": {
+    "ID": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
     "SPTITLE": {
       "type": "string",
       "required": true,
@@ -34,6 +39,12 @@
     "ADDRESS": {
       "type": "string",
       "default": "N"
+    },
+    "VATNUMBER": {
+      "type": "string"
+    },
+    "PIINDEMNITY": {
+      "type": "string"
     },
     "ENDOFINDEMNITY": {
       "type": "string"

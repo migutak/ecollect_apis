@@ -18,17 +18,22 @@
     "custnumber": {
       "type": "string"
     },
+    "custname": {
+      "type": "string"
+    },
     "owner": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "datesent": {
       "type": "date"
     },
     "filepath": {
-      "type": "string"
+      "type": "any"
     },
     "filename": {
+      "type": "any"
+    },
+     "telnumber": {
       "type": "string"
     },
     "byemail": {
