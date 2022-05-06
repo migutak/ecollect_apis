@@ -1,0 +1,40 @@
+{
+  "name": "tblexcuse",
+  "plural": "tblexcuse",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "excuse": {
+      "type": "string",
+      "required": true
+    },
+    "excusedetails": {
+      "type": "string",
+      "required": true
+    },
+    "disabled": {
+      "type": "string",
+      "required": false,
+      "default": "false"
+    },
+    "lastupdate": {
+      "type": "date",
+      "required": false
+    },
+    "lastupdateby": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

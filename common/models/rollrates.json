@@ -1,0 +1,67 @@
+{
+  "name": "rollrates",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "memogroup": {
+      "type": "string"
+    },
+    "businessunit": {
+      "type": "string"
+    },
+    "remedialunit": {
+      "type": "string"
+    },
+    "branchcode": {
+      "type": "string"
+    },
+    "branchname": {
+      "type": "string"
+    },
+    "arocode": {
+      "type": "string",
+      "default": "rrocode"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "productcode": {
+      "type": "string"
+    },
+    "daysinarr_01AUG20": {
+      "type": "number"
+    },
+    "bucket_01AUG20": {
+      "type": "string"
+    },
+    "oustbalance_01AUG20": {
+      "type": "number"
+    },
+    "daysinarr_02AUG20": {
+      "type": "number"
+    },
+    "bucket_02AUG20": {
+      "type": "string",
+      "default": "cleared"
+    },
+    "oustbalance_02AUG20": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,47 @@
+{
+  "name": "insurance",
+  "plural": "insurance",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "insuranceName": {
+      "type": "string"
+    },
+    "physicalAddress": {
+      "type": "string"
+    },
+    "postalAddress": {
+      "type": "string"
+    },
+    "emailAddress": {
+      "type": "string"
+    },
+    "telNumber": {
+      "type": "string"
+    },
+    "contactPerson": {
+      "type": "string"
+    },
+    "updateBy": {
+      "type": "string"
+    },
+    "dateofEntry": {
+      "type": "date"
+    },
+    "dateofLastUpdate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

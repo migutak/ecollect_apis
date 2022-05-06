@@ -1,0 +1,53 @@
+{
+  "name": "authextletters",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "nationid": {
+      "type": "string",
+      "required": true
+    },
+    "letterid": {
+      "type": "string",
+      "required": true
+    },
+    "phonenumber": {
+      "type": "string",
+      "required": true
+    },
+    "owner": {
+      "type": "string",
+      "required": true
+    },
+    "postdate": {
+      "type": "string",
+      "required": true
+    },
+    "isdownloaded": {
+      "type": "string",
+      "required": true,
+      "default": "n"
+    },
+    "downloaddate": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,92 @@
+{
+  "name": "tbl_writeoffs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "casenumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "custname": {
+      "type": "string"
+    },
+    "oustbalance": {
+      "type": "number"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "productcode": {
+      "type": "string"
+    },
+    "businessunit": {
+      "type": "string"
+    },
+    "writeofftype": {
+      "type": "string"
+    },
+    "writeoffamount": {
+      "type": "number"
+    },
+    "settlementamount": {
+      "type": "number"
+    },
+    "provisionamount": {
+      "type": "number"
+    },
+    "resultantbalance": {
+      "type": "number"
+    },
+    "writeoffstory": {
+      "type": "string"
+    },
+    "requestedby": {
+      "type": "string"
+    },
+    "datetequested": {
+      "type": "date"
+    },
+    "approved": {
+      "type": "string"
+    },
+    "dateapproved": {
+      "type": "date"
+    },
+    "print": {
+      "type": "string"
+    },
+    "printby": {
+      "type": "string"
+    },
+    "dateprint": {
+      "type": "date"
+    },
+    "approvedby": {
+      "type": "string"
+    },
+    "applink": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "lastupdatedate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

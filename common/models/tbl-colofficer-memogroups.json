@@ -1,0 +1,23 @@
+{
+  "name": "tbl_colofficer_memogroups",
+  "plural": "tbl_colofficer_memogroups",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "memogroup": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "colofficer": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

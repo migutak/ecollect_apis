@@ -1,0 +1,39 @@
+{
+  "name": "tbl_earlywarningsign_static_audit",
+  "plural": "tbl_earlywarningsign_static_audit",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "accnumber": {
+      "type": "string"
+    },
+    "careaction": {
+      "type": "string"
+    },
+    "lastactiondate": {
+      "type": "string"
+    },
+    "reviewdate": {
+      "type": "string"
+    },
+    "recommendedactions": {
+      "type": "string"
+    },
+    "justification": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

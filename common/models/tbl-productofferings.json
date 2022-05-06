@@ -1,0 +1,71 @@
+{
+  "name": "tbl_productofferings",
+  "plural": "tbl_productofferings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custname": {
+      "type": "string",
+      "required": true
+    },
+    "oustbalance": {
+      "type": "number"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "product": {
+      "type": "string",
+      "required": true
+    },
+    "settlementamount": {
+      "type": "number"
+    },
+    "dateofoffering": {
+      "type": "date"
+    },
+    "expecteddate": {
+      "type": "date"
+    },
+    "lastupdateby": {
+      "type": "string"
+    },
+    "lastupdatedate": {
+      "type": "date"
+    },
+    "additionaldetails": {
+      "type": "string"
+    },
+    "productstatus": {
+      "type": "string"
+    },
+    "settlementdate": {
+      "type": "date"
+    },
+    "collector": {
+      "type": "string"
+    },
+    "remedialunit": {
+      "type": "string"
+    },
+    "recorddate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

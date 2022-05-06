@@ -1,0 +1,104 @@
+{
+  "name": "tbl_investigators",
+  "plural": "tbl_investigators",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "casenumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "custname": {
+      "type": "string",
+      "required": true
+    },
+    "oustbalance": {
+      "type": "number"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "productcode": {
+      "type": "string"
+    },
+    "businessunit": {
+      "type": "string"
+    },
+    "propertyno": {
+      "type": "string"
+    },
+    "reasonforinvestigation": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "requestdate": {
+      "type": "date"
+    },
+    "requestby": {
+      "type": "string"
+    },
+    "serviceprovidername": {
+      "type": "string"
+    },
+    "serviceprovideremail": {
+      "type": "string"
+    },
+    "serviceprovidertel": {
+      "type": "string"
+    },
+    "serviceprovidercontact": {
+      "type": "string"
+    },
+    "assignmentdate": {
+      "type": "date"
+    },
+    "assignedby": {
+      "type": "string"
+    },
+    "duedate": {
+      "type": "date"
+    },
+    "reportdate": {
+      "type": "date"
+    },
+    "report": {
+      "type": "string"
+    },
+    "renewno": {
+      "type": "number"
+    },
+    "renewed": {
+      "type": "string"
+    },
+    "applink": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "lastupdatedate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

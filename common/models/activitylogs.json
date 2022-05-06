@@ -37,6 +37,15 @@
         "nullable": "N"
       }
     },
+    "newcustnumber": {
+      "type": "string",
+      "oracle": {
+        "columnName": "NEWCUSTNUMBER",
+        "dataType": "VARCHAR2",
+        "dataLength": 40,
+        "nullable": "N"
+      }
+    },
     "collectoraction": {
       "type": "string",
       "oracle": {

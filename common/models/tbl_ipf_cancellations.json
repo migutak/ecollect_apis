@@ -1,0 +1,134 @@
+{
+  "name": "tbl_ipf_cancellations",
+  "plural": "tbl_ipf_cancellations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "custname": {
+      "type": "string"
+    },
+    "celnumber": {
+      "type": "string"
+    },
+    "telnumber": {
+      "type": "string"
+    },
+    "oustbalance": {
+      "type": "string"
+    },
+    "arrearsamount": {
+      "type": "string"
+    },
+     "daysinarr": {
+      "type": "string"
+    },
+    "scheduleamount": {
+      "type": "string"
+    },
+    "scheduledate": {
+      "type": "string"
+    },
+    "insuranceco": {
+      "type": "string"
+    },
+    "insuranceemail": {
+      "type": "string"
+    },
+    "ipfreason": {
+      "type": "string"
+    },
+    "ipfreasondetails": {
+      "type": "string"
+    },
+    "emailaddress": {
+      "type": "string"
+    },
+    "insuranceaddress": {
+      "type": "string"
+    },
+    "withassetfinance": {
+      "type": "string"
+    },
+    "cancelipf": {
+      "type": "string"
+    },
+    "daysutilized": {
+      "type": "string"
+    },
+    "daysunutilized": {
+      "type": "string"
+    },
+    "refundamount": {
+      "type": "string"
+    },
+    "broker": {
+      "type": "string"
+    },
+    "policynumber": {
+      "type": "string"
+    },
+    "policyamount": {
+      "type": "string"
+    },
+    "policystartdate": {
+      "type": "string"
+    },
+    "branchname": {
+      "type": "string"
+    },
+    "loanstartdate": {
+      "type": "string"
+    },
+    "policyenddate": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "issuedby": {
+      "type": "string"
+    },
+    "cancellationletter": {
+      "type": "string"
+    },
+    "reinstatementletter": {
+      "type": "string"
+    },
+    "cancellationcomment": {
+      "type": "string"
+    },
+     "cancellationdate": {
+      "type": "string"
+    },
+    "reinstatementdate": {
+      "type": "string"
+    },
+    "paymentamount": {
+      "type": "string"
+    },
+    "paymentdate": {
+      "type": "string"
+    },
+    "writeoffamount": {
+      "type": "string"
+    },
+     "stagedate": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

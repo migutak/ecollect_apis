@@ -1,0 +1,115 @@
+{
+  "name": "tbl_assetfinance",
+  "plural": "tbl_assetfinance",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "custname": {
+      "type": "string"
+    },
+    "nationid": {
+      "type": "string"
+    },
+    "productcode": {
+      "type": "string"
+    },
+    "section": {
+      "type": "string"
+    },
+    "oustbalance": {
+      "type": "number"
+    },
+    "arrearsAmount": {
+      "type": "number",
+      "default": 0
+    },
+    "daysinarr": {
+      "type": "number",
+      "default": 0
+    },
+    "scheduleAmount": {
+      "type": "number"
+    },
+    "scheduleDate": {
+      "type": "string"
+    },
+    "origDate": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "vehicleregnumber": {
+      "type": "string"
+    },
+    "make": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "repossessionorderdate": {
+      "type": "date"
+    },
+    "chasisnumber": {
+      "type": "string"
+    },
+    "status": {
+      "type": "date"
+    },
+    "daterepossessed": {
+      "type": "date"
+    },
+    "auctioneer": {
+      "type": "string"
+    },
+    "storageyard": {
+      "type": "string"
+    },
+    "datebooked": {
+      "type": "date"
+    },
+    "datevaluation": {
+      "type": "date"
+    },
+    "forcedsalevalue": {
+      "type": "number"
+    },
+    "marketsalevalue": {
+      "type": "number"
+    },
+    "sold": {
+      "type": "string"
+    },
+    "released": {
+      "type": "string"
+    },
+    "datereleased": {
+      "type": "date"
+    },
+    "casenumber": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

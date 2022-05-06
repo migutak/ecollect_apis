@@ -1,0 +1,38 @@
+{
+  "name": "TBL_EARLYWARNINGSIGN_STATIC",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accnumber": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "careaction": {
+      "type": "string",
+      "required": false
+    },
+    "lastactiondate": {
+      "type": "string"
+    },
+    "reviewdate": {
+      "type": "string"
+    },
+    "recommendedactions": {
+      "type": "string"
+    },
+    "justification": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

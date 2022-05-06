@@ -1,0 +1,79 @@
+{
+  "name": "tblinvoices",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "sptitle": {
+      "type": "string",
+      "required": true
+    },
+    "accnumber": {
+      "type": "string"
+    },
+    "custnumber": {
+      "type": "string"
+    },
+    "custname": {
+      "type": "string"
+    },
+    "spaccount": {
+      "type": "string"
+    },
+    "datefeenote": {
+      "type": "date"
+    },
+    "feenotedate": {
+      "type": "date"
+    },
+    "feenoteamnt": {
+      "type": "number"
+    },
+    "approvedamnt": {
+      "type": "number"
+    },
+    "dateinput": {
+      "type": "date"
+    },
+    "method": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "printdate": {
+      "type": "date"
+    },
+    "stagedate": {
+      "type": "date"
+    },
+    "wht": {
+      "type": "number"
+    },
+    "vat": {
+      "type": "number"
+    },
+    "invoiceimage": {
+      "type": "string"
+    },
+    "invoicename": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

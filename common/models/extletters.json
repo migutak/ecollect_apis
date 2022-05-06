@@ -1,0 +1,52 @@
+{
+  "name": "extletters",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": false
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
+    "nationid": {
+      "type": "string",
+      "required": true
+    },
+    "letterid": {
+      "type": "string",
+      "required": true
+    },
+    "phonenumber": {
+      "type": "string",
+      "required": true
+    },
+    "postdate": {
+      "type": "date"
+    },
+    "isdownloaded": {
+      "type": "string",
+      "default": "n"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "downloaddate": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,81 @@
+{
+  "name": "customer_stage",
+  "plural": "customer_stage",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "custnumber": {
+      "type": "string",
+      "id": true
+    },
+    "gender": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "middlename": {
+      "type": "string"
+    },
+    "businessunit": {
+      "type": "string"
+    },
+    "addressline1": {
+      "type": "string",
+      "required": true
+    },
+    "addressline2": {
+      "type": "string"
+    },
+    "addressline3": {
+      "type": "string"
+    },
+    "town": {
+      "type": "string"
+    },
+    "emailaddress": {
+      "type": "string"
+    },
+    "faxnumber": {
+      "type": "string"
+    },
+    "telnumber": {
+      "type": "string"
+    },
+    "celnumber": {
+      "type": "string"
+    },
+    "nationid": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "employer": {
+      "type": "string"
+    },
+    "employerno": {
+      "type": "string"
+    },
+    "pfnumber": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
