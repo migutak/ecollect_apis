@@ -1,62 +1,72 @@
 {
   "name": "tblmarketors",
+  "plural": "tblmarketors",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "ID": {
-      "type": "string",
+    "id": {
+      "type": "number",
       "id": true
     },
-    "CUSTNUMBER": {
+    "custnumber": {
       "type": "string",
       "required": true
     },
-    "ACCNUMBER": {
+    "accnumber": {
       "type": "string",
       "required": true
     },
-    "CUSTNAME": {
-      "type": "string"
-    },
-    "AROCODE": {
-      "type": "string"
-    },
-    "FILENO": {
-      "type": "string"
-    },
-    "PROPERTYNO": {
-      "type": "string"
-    },
-    "ACCBALANCE": {
-      "type": "string"
-    },
-    "OPENMARKETVALUE": {
-      "type": "string"
-    },
-    "FORCEDSALEVALUE": {
-      "type": "string"
-    },
-    "OWNERSHIP": {
-      "type": "string"
-    },
-    "DATEINPUT": {
-      "type": "date"
-    },
-    "OWNER": {
-      "type": "string"
-    },
-    "STAGEDATE": {
-      "type": "date"
-    },
-    "NEWSTATUS": {
+    "custname": {
       "type": "string",
-      "default": "unassigned"
+      "required": true
     },
-    "CANCELCOMMENT": {
+    "arocode": {
       "type": "string"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "fileno": {
+      "type": "string"
+    },
+    "propertyno": {
+      "type": "string"
+    },
+    "accbalance": {
+      "type": "number"
+    },
+    "openmarketvalue": {
+      "type": "number"
+    },
+    "forcedsalevalue": {
+      "type": "number"
+    },
+    "ownership": {
+      "type": "string"
+    },
+    "dateinput": {
+      "type": "date"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
+    },
+    "newstatus": {
+      "type": "string"
+    },
+    "serviceprovider": {
+      "type": "string"
+    },
+    "dateassigned": {
+      "type": "date"
+    },
+    "duedate": {
+      "type": "date"
     }
   },
   "validations": [],

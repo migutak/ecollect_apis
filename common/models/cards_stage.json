@@ -8,7 +8,6 @@
   },
   "scope": {
     "include": [
-      "static",
       "demandsdue"
     ]
   },
@@ -107,19 +106,10 @@
     },
     "tel": {
       "type": "string"
-    },
-    "title": {
-      "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "static": {
-      "type": "hasOne",
-      "model": "tblcard_static",
-      "foreignKey": "cardnumber",
-      "primaryKey": "cardnumber"
-    },
     "demandsdue": {
       "type": "hasMany",
       "model": "demandsduecc",

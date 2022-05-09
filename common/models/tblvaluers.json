@@ -6,59 +6,89 @@
     "validateUpsert": true
   },
   "properties": {
-    "ID": {
-      "type": "string",
+    "id": {
+      "type": "number",
       "id": true
     },
-    "CUSTNUMBER": {
-      "type": "string",
-      "required": true
-    },
-    "ACCNUMBER": {
-      "type": "string",
-      "required": true
-    },
-    "CUSTNAME": {
+    "custnumber": {
       "type": "string"
     },
-    "AROCODE": {
+    "accnumber": {
       "type": "string"
     },
-    "FILENO": {
+    "custname": {
       "type": "string"
     },
-    "PROPERTYNO": {
+    "arocode": {
       "type": "string"
     },
-    "ACCBALANCE": {
+    "rrocode": {
       "type": "string"
     },
-    "VEHICLEMAKE": {
+    "fileno": {
       "type": "string"
     },
-    "REGOWNER": {
+    "vehiclemake": {
       "type": "string"
     },
-    "OWNERSHIP": {
+    "propertyno": {
       "type": "string"
     },
-    "DATEINPUT": {
+    "regowner": {
+      "type": "string"
+    },
+    "ownership": {
+      "type": "string"
+    },
+    "accbalance": {
+      "type": "number"
+    },
+    "yard": {
+      "type": "string"
+    },
+    "dateinput": {
       "type": "date"
     },
-    "OWNER": {
-      "type": "string"
-    },
-    "STAGEDATE": {
+    "duedate": {
       "type": "date"
     },
-    "NEWSTATUS": {
-      "type": "string",
-      "default": "unassigned"
-    },
-    "YARD": {
+    "owner": {
       "type": "string"
     },
-    "CANCELCOMMENT": {
+    "vehicleregno": {
+      "type": "string"
+    },
+    "serviceprovider": {
+      "type": "string"
+    },
+    "openmarketvalue": {
+      "type": "number"
+    },
+    "forcedsalevalue": {
+      "type": "number"
+    },
+    "dateassigned": {
+      "type": "date"
+    },
+    "valuationdate": {
+      "type": "date"
+    },
+    "newstatus": {
+      "type": "string"
+    },
+    "followupcomment": {
+      "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
+    },
+    "proptype": {
+      "type": "string"
+    },
+    "regno": {
+      "type": "string"
+    },
+    "carmake": {
       "type": "string"
     }
   },

@@ -8,20 +8,22 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint && npm audit"
+    "posttest": "npm run lint && npm audit",
+    "build": "docker build -t docker.io/migutak/ecollect_apis:5.5 ."
   },
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "helmet": "^3.10.0",
-    "jw-paginate": "^1.0.4",
     "loopback": "^3.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^6.2.0",
-    "loopback-connector-oracle": "^4.3.0",
-    "node-cron": "^2.0.3",
+    "loopback-connector-mysql": "^5.4.3",
+    "loopback-connector-oracle": "^4.5.2",
+    "loopback-redis-cache": "^1.0.10",
     "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^3.0.0"
+    "strong-error-handler": "^3.0.0",
+    "swagger-stats": "^0.95.16"
   },
   "devDependencies": {
     "eslint": "^3.17.1",

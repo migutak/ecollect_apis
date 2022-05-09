@@ -7,8 +7,10 @@
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
-
+var swStats = require('swagger-stats');  
 var app = module.exports = loopback();
+
+app.use(swStats.getMiddleware());
 
 app.start = function() {
   // start the web server

@@ -18,22 +18,17 @@
     "custnumber": {
       "type": "string"
     },
-    "custname": {
-      "type": "string"
-    },
     "owner": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "datesent": {
       "type": "date"
     },
     "filepath": {
-      "type": "any"
+      "type": "string"
     },
     "filename": {
-      "type": "any"
-    },
-     "telnumber": {
       "type": "string"
     },
     "byemail": {
@@ -67,6 +62,45 @@
       "type": "number"
     },
     "guarantorsemail": {
+      "type": "string"
+    },
+    "expirydays": {
+      "type": "number"
+    },
+    "expirydate": {
+      "type": "string"
+    },
+    "lrno": {
+      "type": "string"
+    },
+    "regowner": {
+      "type": "string"
+    },
+    "propertylocation": {
+      "type": "string"
+    },
+    "ownership": {
+      "type": "string"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "rrocode": {
+      "type": "string"
+    },
+    "branchcode": {
+      "type": "string"
+    },
+    "branchname": {
+      "type": "string"
+    },
+    "colofficeremailaddress": {
+      "type": "string"
+    },
+    "celnumber": {
+      "type": "string"
+    },
+    "custname": {
       "type": "string"
     }
   },

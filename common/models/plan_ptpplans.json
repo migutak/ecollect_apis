@@ -11,8 +11,8 @@
       "type": "number",
       "id": true
     },
-    "ptpfreq": {
-      "type": "string",
+    "no_of_frequency": {
+      "type": "number",
       "required": true
     },
     "accnumber": {
@@ -26,6 +26,9 @@
       "type": "number"
     },
     "ptpstartdate": {
+      "type": "string"
+    },
+    "ptpfreq": {
       "type": "string"
     },
     "owner": {

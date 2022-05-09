@@ -1,0 +1,12 @@
+{
+  "oracle": {
+    "host": "host.docker.internal",
+    "port": 1564,
+    "database": "ORCLCDB.localdomain",
+    "password": "ecol",
+    "name": "oracle",
+    "tns": "",
+    "user": "ecol",
+    "connector": "oracle" 
+  }
+}

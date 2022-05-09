@@ -36,7 +36,7 @@ module.exports = function(Tblassetfinance) {
     
       function buildSql(request) {
         const selectSql = createSelectSql(request);
-        const fromSql = ' from ecol.tbl_assetfinance ';
+        const fromSql = ' from ecol.tblrepossessions ';
         const whereSql = createWhereSql(request);
         const limitSql = createLimitSql(request);
     
@@ -44,8 +44,7 @@ module.exports = function(Tblassetfinance) {
         const groupBySql = createGroupBySql(request);
     
         const SQL = selectSql + fromSql + whereSql + groupBySql + orderBySql + limitSql;
-    
-        console.log(SQL);
+
     
         return SQL;
     }
@@ -120,7 +119,7 @@ module.exports = function(Tblassetfinance) {
             case 'endsWith':
                 return 'upper(' + key + ') like \'%' + (item.filter).toUpperCase() + '\'';
             default:
-                console.log('unknown text filter type: ' + item.type);
+                //console.log('unknown text filter type: ' + item.type);
                 return 'true';
         }
     }

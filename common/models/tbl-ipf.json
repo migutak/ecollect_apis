@@ -35,7 +35,8 @@
       "default": 0
     },
     "daysinarr": {
-      "type": "any"
+      "type": "number",
+      "default": 0
     },
     "scheduleAmount": {
       "type": "number"
@@ -55,7 +56,15 @@
     "rrocode": {
       "type": "string"
     },
-  
+    "policyNumber": {
+      "type": "string"
+    },
+    "insurance": {
+      "type": "string"
+    },
+    "broker": {
+      "type": "string"
+    },
     "status": {
       "type": "string"
     },
@@ -72,12 +81,6 @@
       "type": "number"
     },
     "casenumber": {
-      "type": "string"
-    },
-    "celnumber": {
-      "type": "string"
-    },
-    "telnumber": {
       "type": "string"
     }
   },

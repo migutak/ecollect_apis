@@ -11,6 +11,10 @@
       "type": "number",
       "id": true
     },
+    "planid": {
+      "type": "string",
+      "required": true
+    },
     "accnumber": {
       "type": "string",
       "required": true
@@ -26,7 +30,7 @@
       "type": "string"
     },
     "dateupdated": {
-      "type": "date"
+      "type": "string"
     },
     "deleted": {
       "type": "string",

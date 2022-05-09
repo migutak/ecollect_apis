@@ -101,6 +101,15 @@
     },
     "lastactiondate": {
       "type": "date"
+    },
+    "restructure": {
+      "type": "string"
+    },
+    "restructureamount": {
+      "type": "number"
+    },
+    "abilitytopay": {
+      "type": "string"
     }
   },
   "validations": [],

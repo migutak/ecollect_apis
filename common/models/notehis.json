@@ -32,33 +32,8 @@
     "notedate": {
       "type": "date"
     },
-    "hasreasonchanged": {
-      "type": "string",
-      "required": false
-    },
-    "reasonforchanging": {
-      "type": "string",
-      "required": false
-    },
-    "previousreason": {
-      "type": "string",
-      "required": false
-    },
-    "outsbalance": {
-      "type": "string",
-      "required": false
-    },
-    "totalarrears": {
-      "type": "string",
-      "required": false
-    },
-    "newcustnumber": {
-      "type": "string",
-      "required": false
-    },
-    "daysinarrears": {
-      "type": "string",
-      "required": false
+    "reason": {
+      "type": "string"
     }
   },
   "validations": [],

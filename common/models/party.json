@@ -16,10 +16,6 @@
       "type": "string",
       "required": true
     },
-    "lastupdatedby": {
-      "type": "string",
-      "required": false
-    },
     "active": {
       "type": "string",
       "required": true

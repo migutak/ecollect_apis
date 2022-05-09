@@ -22,7 +22,7 @@
       "type": "string"
     },
     "daysinarr": {
-      "type": "any"
+      "type": "number"
     },
     "emailaddress": {
       "type": "string"
@@ -56,7 +56,6 @@
     }
   },
   "validations": [],
-  "relations": {},
   "acls": [],
   "methods": {}
 }

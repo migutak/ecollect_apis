@@ -17,18 +17,6 @@
     "dataSource": "oracle",
     "public": true
   },
-  "tbl_ipfdatajoined": {
-    "dataSource": "oracle",
-    "public": true
-  },
-  "tbl_ipf_cancellations": {
-    "dataSource": "oracle",
-    "public": true
-  },
-   "edc_enrollment": {
-    "dataSource": "oracle",
-    "public": true
-  },
   "demandsdue": {
     "dataSource": "oracle",
     "public": true
@@ -105,10 +93,6 @@
     "dataSource": "oracle",
     "public": true
   },
-  "tbl_emailsent": {
-    "dataSource": "oracle",
-    "public": true
-  },
   "tbl_portfolio_static": {
     "dataSource": "oracle",
     "public": true
@@ -117,11 +101,6 @@
     "dataSource": "oracle",
     "public": true
   },
-  "utilizationbranch": {
-    "dataSource": "oracle",
-    "public": true
-  },
-
   "teles": {
     "dataSource": "oracle",
     "public": true
@@ -395,6 +374,22 @@
     "public": true
   },
   "tbl_earlywarningsign_static_audit": {
+    "dataSource": "oracle",
+    "public": true
+  },"tbl_ipfdatajoined": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_ipf_cancellations": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "edc_enrollment": {
+    "dataSource": "oracle",
+    "public": true
+  }
+  ,
+  "tblmarketers_assigned": {
     "dataSource": "oracle",
     "public": true
   }

@@ -84,9 +84,6 @@
     "policystartdate": {
       "type": "string"
     },
-    "branchname": {
-      "type": "string"
-    },
     "loanstartdate": {
       "type": "string"
     },

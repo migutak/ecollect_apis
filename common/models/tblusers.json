@@ -1,5 +1,6 @@
 {
   "name": "tblusers",
+  "plural": "tblusers",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -12,14 +13,12 @@
       "required": true
     },
     "firstname": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "surname": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
-    "middlename": {
+    "lastname": {
       "type": "string"
     },
     "active": {
@@ -53,9 +52,6 @@
       "type": "string",
       "default": "N"
     },
-    "loked": {
-      "type": "string"
-    },
     "email": {
       "type": "string"
     },
@@ -81,6 +77,9 @@
       "type": "string"
     },
     "arocode": {
+      "type": "string"
+    },
+    "rrocode": {
       "type": "string"
     }
   },

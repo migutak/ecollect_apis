@@ -7,22 +7,14 @@
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "number",
-      "id": true,
-      "required": false
-    },
     "collectoractionid": {
       "type": "string",
+      "id": true,
       "required": true
     },
     "collectoraction": {
       "type": "string",
       "required": true
-    },
-"lastupdatedby": {
-      "type": "string",
-      "required": false
     },
     "active": {
       "type": "string",

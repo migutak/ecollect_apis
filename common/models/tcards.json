@@ -144,6 +144,18 @@
     },
     "outbalance": {
       "type": "number"
+    },
+    "arocode": {
+      "type": "string"
+    },
+    "branchcode": {
+      "type": "string"
+    },
+    "branchname": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
     }
   },
   "validations": [],

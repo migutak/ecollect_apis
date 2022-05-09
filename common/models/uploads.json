@@ -20,9 +20,6 @@
       "type": "string",
       "required": true
     },
-    "newcustnumber": {
-      "type": "string"
-    },
     "destpath": {
       "type": "string"
     },

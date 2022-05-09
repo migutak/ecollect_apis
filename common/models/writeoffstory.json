@@ -24,9 +24,35 @@
       "type": "string",
       "required": true
     },
+    "approvedamount": {
+      "type": "number"
+    },
+    "causeofdefault": {
+      "type": "string"
+    },
+    "collectorrecomm": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "hassecurity": {
+      "type": "string"
+    },
+    "securityvalue": {
+      "type": "number"
+    },
+    "securitytype": {
+      "type": "string"
+    },
+    "recoveryeffort": {
+      "type": "string"
+    },
     "lastupdate": {
-      "type": "string",
-      "required": true
+      "type": "string"
+    },
+    "writeofftype": {
+      "type": "string"
     }
   },
   "validations": [],

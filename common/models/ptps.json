@@ -31,6 +31,9 @@
     "ptpdate": {
       "type": "string"
     },
+    "promisedate": {
+      "type": "date"
+    },
     "paymethod": {
       "type": "string"
     },
@@ -39,6 +42,23 @@
     },
     "owner": {
       "type": "string"
+    },
+    "ammended": {
+      "type": "string"
+    },
+    "ptpsmsnumber": {
+      "type": "string"
+    },
+    "ptpemailaddress": {
+      "type": "string"
+    },
+    "ptpsms": {
+      "type": "string",
+      "default": "false"
+    },
+    "ptpemail": {
+      "type": "string",
+      "default": "false"
     }
   },
   "validations": [],
