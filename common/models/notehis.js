@@ -98,7 +98,7 @@ module.exports = function (Notehis) {
     Notehis.allcustnotes = function (custnumber, cb) {
         var ds = Notehis.dataSource;
 
-        var allcustnotes_sql = "Select *  from vallnotes where custnumber = '" + custnumber + "' order by notedate desc";
+        var allcustnotes_sql = "Select *  from vallnotes where custnumber = '" + custnumber + "'order by notedate desc";
 
         ds.connector.query(allcustnotes_sql, [], function (err, accounts) {
             if (err) console.error(err);
@@ -107,13 +107,13 @@ module.exports = function (Notehis) {
     };
 
     Notehis.remoteMethod('allcustnotes', {
-        accepts: {
+        accepts: [{
             arg: 'custnumber',
             type: 'string',
             http: {
                 source: 'query',
             },
-        },
+        }],
         returns: {
             arg: 'result',
             type: 'object',
@@ -129,7 +129,7 @@ module.exports = function (Notehis) {
     Notehis.commenttotal = function (custnumber, cb) {
         var ds = Notehis.dataSource;
         //
-        var commenttotal_sql = "Select count(*) total from notehis where custnumber = '" + custnumber + "' and notesrc='made a comment'";
+        var commenttotal_sql = "Select count(*) total from notehis where custnumber = '" + custnumber + "' or newcustnumber='" + newcustnumber + "'";
 
         ds.connector.query(commenttotal_sql, [], function (err, accounts) {
             if (err) console.error(err);
