@@ -19,6 +19,9 @@
     "custnumber": {
       "type": "string"
     },
+    "newcustnumber": {
+      "type": "string"
+    },
     "accnumber": {
       "type": "string"
     },

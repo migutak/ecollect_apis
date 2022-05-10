@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(deptcollateral) {
-    deptcollateral.total = function (custnumber, cb) {
+  deptcollateral.total = function (custnumber, cb) {
         var ds = deptcollateral.dataSource;
         //
         var total_sql = "Select count(*) total from deptcollateral where custnumber = '" + custnumber +"'";
@@ -30,4 +30,44 @@ module.exports = function(deptcollateral) {
             verb: 'get',
         },
     });
+
+
+
+  deptcollateral.getdeptcolla = function (custnumber, newcustnumber, cb) {
+    var ds = deptcollateral.dataSource;
+    //
+    var total_sql = "Select *  from deptcollateral where custnumber = '" + custnumber +"' or newcustnumber = '" + newcustnumber +"'";
+    ds.connector.query(total_sql, [], function (err, accounts) {
+      if (err) console.error(err);
+      cb(err, accounts);
+    })
+
+  };
+
+  deptcollateral.remoteMethod('getdeptcolla', {
+    accepts: [{
+      arg: 'custnumber',
+      type: 'string',
+      http: {
+        source: 'query',
+      },
+    },
+      {
+        arg: 'newcustnumber',
+        type: 'string',
+        http: {
+          source: 'query',
+        },
+      }],
+    returns: {
+      arg: 'result',
+      type: 'object',
+      root: true,
+    },
+    http: {
+      path: '/getdeptcolla',
+      verb: 'get',
+    },
+  });
+
 };

@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = function(Sms) {
-  Sms.total = function(custnumber, cb) {
+  Sms.total = function(custnumber, newcustnumber, cb) {
     const ds = Sms.dataSource;
     //
-    var totalsql = "SELECT * FROM SMS WHERE custnumber = '" + custnumber + "'";
+    var totalsql = "SELECT * FROM SMS WHERE custnumber = '" + custnumber + "' or custnumber = '" + newcustnumber + "'";
 
     ds.connector.query(totalsql, [], function(err, accounts) {
       if (err) console.error(err);

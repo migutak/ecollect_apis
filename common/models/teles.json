@@ -16,6 +16,10 @@
       "type": "string",
       "required": true
     },
+    "newcustnumber": {
+      "type": "string",
+      "required": true
+    },
     "telephone": {
       "type": "string"
     },
