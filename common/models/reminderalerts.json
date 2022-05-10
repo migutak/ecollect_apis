@@ -1,0 +1,31 @@
+{
+  "name": "reminderalerts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "string",
+      "id": true
+    },
+    "ACCNUMBER": {
+      "type": "string"
+    },
+    "SUBMITTEDBY": {
+      "type": "string"
+    },
+    "DESCRIPTION": {
+      "type": "string"
+    },
+    "ISSUE": {
+      "type": "string"
+    }
+
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

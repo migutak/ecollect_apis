@@ -22,7 +22,8 @@
     },
     "lastupdate": {
       "type": "date",
-      "required": false
+      "required": false,
+      "default": "$now"
     },
     "lastupdateby": {
       "type": "string",

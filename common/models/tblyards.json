@@ -1,57 +1,49 @@
 {
-  "name": "teles",
-  "plural": "teles",
+  "name": "tblyards",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "number",
-      "id": true,
-      "required": false
+    "ID": {
+      "type": "string",
+      "id": true
     },
-    "custnumber": {
+    "CUSTNUMBER": {
       "type": "string",
       "required": true
     },
-    "newcustnumber": {
+    "ACCNUMBER": {
       "type": "string",
       "required": true
     },
-    "telephone": {
+    "CUSTNAME": {
       "type": "string"
     },
-    "email": {
+    "AROCODE": {
       "type": "string"
     },
-    "owner": {
+    "FILENO": {
       "type": "string"
     },
-    "updatedlast": {
+    "ACCBALANCE": {
+      "type": "string"
+    },
+    "VEHICLEMAKE": {
+      "type": "string"
+    },
+    "VEHICLEREGNO": {
+      "type": "string"
+    },
+    "DATEINPUT": {
       "type": "date"
     },
-    "updatedby": {
+    "OWNER": {
       "type": "string"
     },
-    "active": {
-      "type": "string"
-    },
-    "address": {
-      "type": "string"
-    },
-    "postcode": {
-      "type": "string"
-    },
-    "contacttype": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
-    },
-    "newcustnumber": {
-      "type": "string"
+    "STAGEDATE": {
+      "type": "date"
     }
   },
   "validations": [],

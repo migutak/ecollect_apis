@@ -1,5 +1,6 @@
 {
-  "name": "guarantordetails",
+  "name": "tbl_emailsent",
+  "plural": "tbl_emailsent",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -7,37 +8,34 @@
   },
   "properties": {
     "id": {
-      "type": "number",
+      "type": "string",
       "id": true
     },
-    "nationid": {
+    "sentdate": {
+      "type": "date"
+    },
+    "subject": {
       "type": "string"
     },
-    "guarantorname": {
+    "emailaddress": {
       "type": "string"
     },
-    "custnumber": {
+    "sentby": {
       "type": "string"
     },
-    "newcustnumber": {
+    "important": {
       "type": "string"
     },
-    "accnumber": {
+    "emailcontent": {
       "type": "string"
     },
-    "address": {
+    "cc": {
       "type": "string"
     },
-    "postalcode": {
+    "trash": {
       "type": "string"
     },
-    "email": {
-      "type": "string"
-    },
-    "telnumber": {
-      "type": "string"
-    },
-    "active": {
+    "bcc": {
       "type": "string"
     }
   },

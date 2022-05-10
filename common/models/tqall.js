@@ -66,7 +66,7 @@ module.exports = function (tqall) {
           cb(err, response);
         });*/
       }
-      // 
+      //
     })
 
   };
@@ -130,7 +130,7 @@ module.exports = function (tqall) {
           cb(err, response);
         })
       }
-      // 
+      //
     })
 
   };
@@ -196,7 +196,7 @@ module.exports = function (tqall) {
           cb(err, response);
         });*/
       }
-      // 
+      //
     })
 
   };
@@ -248,7 +248,7 @@ module.exports = function (tqall) {
           cb(err, response);
         });
       }
-      // 
+      //
     })
 
   };
