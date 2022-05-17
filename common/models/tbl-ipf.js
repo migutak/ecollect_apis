@@ -36,7 +36,7 @@ module.exports = function(Tblipf) {
     
       function buildSql(request) {
         const selectSql = createSelectSql(request);
-        const fromSql = ' from ecol.tbl_ipf ';
+        const fromSql = ' from ecol.q_ipf_finacle ';
         const whereSql = createWhereSql(request);
         const limitSql = createLimitSql(request);
     
