@@ -39,4 +39,43 @@ module.exports = function(Uploads) {
     },
   });
 
+
+
+  Uploads.getproducts = function (custnumber, newcustnumber, cb) {
+    var ds = Uploads.dataSource;
+    //
+    var total_sql = "SELECT * FROM UPLOADS WHERE (DOCDESC = 'Product approval') AND custnumber = '"+custnumber+"' AND (newcustnumber = '"+newcustnumber+"')";
+    ds.connector.query(total_sql, [], function (err, accounts) {
+      if (err) console.error(err);
+      cb(err, accounts);
+    })
+
+  };
+
+  Uploads.remoteMethod('getproducts', {
+    accepts: [{
+      arg: 'custnumber',
+      type: 'string',
+      http: {
+        source: 'query',
+      },
+    },
+      {
+        arg: 'newcustnumber',
+        type: 'string',
+        http: {
+          source: 'query',
+        },
+      }],
+    returns: {
+      arg: 'result',
+      type: 'object',
+      root: true,
+    },
+    http: {
+      path: '/getproducts',
+      verb: 'get',
+    },
+  });
+
 };
