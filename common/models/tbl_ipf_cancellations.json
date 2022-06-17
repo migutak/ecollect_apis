@@ -122,7 +122,10 @@
     },
      "stagedate": {
       "type": "string"
-    }
+    },
+    "EMAILADDRESS": {
+     "type": "string"
+   }
   },
   "validations": [],
   "relations": {},
