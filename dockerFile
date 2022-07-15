@@ -5,6 +5,7 @@ LABEL "provider"="Oracle"                                               \
 
 ARG release=19
 ARG update=9
+ENV UV_THREADPOOL_SIZE=100
 
 RUN  microdnf install oracle-release-el8 && \
   microdnf install oracle-instantclient${release}.${update}-basic oracle-instantclient${release}.${update}-devel oracle-instantclient${release}.${update}-sqlplus && \
@@ -25,6 +26,7 @@ COPY . .
 ENV HOST=0.0.0.0 PORT=8000
 
 EXPOSE ${PORT}
-CMD [ "node", "." ]
-# docker build -t migutak/ecollect_apis:6.1.3 .
+CMD [ "node", "server/server.js" ]
+# CMD [ "node", "." ]
+# docker build -t migutak/ecollect_apis:6.1.5 .
 
