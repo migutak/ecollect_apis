@@ -10,7 +10,7 @@ node {
 
       stage('Test'){
 
-            sh 'Testing ...'
+            sh 'echo Testing stage ...'
 
         }
 
