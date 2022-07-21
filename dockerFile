@@ -1,32 +1,31 @@
-FROM oraclelinux:8-slim
+FROM oraclelinux:7-slim as builder
 
-LABEL "provider"="Oracle"                                               \
-  "issues"="https://github.com/oracle/docker-images/issues"
+RUN  yum -y install oracle-release-el7 oracle-nodejs-release-el7 && \
+  yum-config-manager --disable ol7_developer_EPEL && \
+  yum -y install oracle-instantclient19.3-basiclite nodejs && \
+  rm -rf /var/cache/yum
 
-ARG release=19
-ARG update=9
-ENV UV_THREADPOOL_SIZE=100
+# Get a new image
+FROM node:18-alpine3.15
 
-RUN  microdnf install oracle-release-el8 && \
-  microdnf install oracle-instantclient${release}.${update}-basic oracle-instantclient${release}.${update}-devel oracle-instantclient${release}.${update}-sqlplus && \
-  microdnf install nodejs &&\
-  microdnf install iputils telnet -y &&\
-  microdnf clean all
-
-#RUN useradd -ms /bin/bash  node
+# Copy the Instant Client libraries, licenses and config file from the previous image
+COPY --from=builder /usr/lib/oracle /usr/lib/oracle
+COPY --from=builder /usr/share/oracle /usr/share/oracle
+COPY --from=builder /etc/ld.so.conf.d/oracle-instantclient.conf /etc/ld.so.conf.d/oracle-instantclient.conf
 
 WORKDIR /home/node/app
-
+RUN chown node:node -R /home/node/app
+USER node
 # Install app dependencies
-COPY package*.json ./
+COPY --chown=node package*.json ./
 RUN npm install --production
-COPY . .
+COPY --chown=node . .
+
 
 # Bind to all network interfaces so that it can be mapped to the host OS
 ENV HOST=0.0.0.0 PORT=8000
 
 EXPOSE ${PORT}
 CMD [ "node", "server/server.js" ]
-# CMD [ "node", "." ]
-# docker build -t migutak/ecollect_apis:6.1.5 .
 
+# docker build -t migutak/ecollect_apis:6.1.5 .
