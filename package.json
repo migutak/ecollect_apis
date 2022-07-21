@@ -14,17 +14,20 @@
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
+    "ejs": "^3.1.8",
     "helmet": "^3.10.0",
     "jw-paginate": "^1.0.4",
     "loopback": "^3.22.0",
     "loopback-boot": "^2.6.5",
-    "loopback-component-explorer": "^6.5.1",
+    "loopback-component-explorer": "^2.7.0",
     "loopback-connector-mysql": "^5.4.3",
     "loopback-connector-oracle": "^4.5.2",
     "loopback-redis-cache": "^1.0.10",
+    "redis": "^4.2.0",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^3.0.0",
-    "swagger-stats": "^0.95.16"
+    "swagger-stats": "^0.95.16",
+    "swagger-ui": "^4.13.0"
   },
   "devDependencies": {
     "eslint": "^8.20.0",
