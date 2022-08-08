@@ -28,4 +28,6 @@ ENV HOST=0.0.0.0 PORT=8000
 EXPOSE ${PORT}
 CMD [ "node", "server/server.js" ]
 
-# docker build -t migutak/ecollect_apis:6.1.5 .
+# docker build --no-cache -t migutak/ecollect_apis:6.2.4 .
+# npm install --cache /tmp/empty-cache
+# npm cache clean

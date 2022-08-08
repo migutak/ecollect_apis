@@ -30,7 +30,7 @@
     "arrearsamount": {
       "type": "string"
     },
-     "daysinarr": {
+    "daysinarr": {
       "type": "string"
     },
     "scheduleamount": {
@@ -105,7 +105,7 @@
     "cancellationcomment": {
       "type": "string"
     },
-     "cancellationdate": {
+    "cancellationdate": {
       "type": "string"
     },
     "reinstatementdate": {
@@ -120,12 +120,30 @@
     "writeoffamount": {
       "type": "string"
     },
-     "stagedate": {
+    "stagedate": {
       "type": "string"
     },
     "EMAILADDRESS": {
-     "type": "string"
-   }
+      "type": "string"
+    },
+    "checknumber": {
+      "type": "string"
+    },
+    "loancleared": {
+      "type": "string"
+    },
+    "datestatus": {
+      "type": "string"
+    },
+    "woffamount": {
+      "type": "number"
+    },
+    "wofftype": {
+      "type": "string"
+    },
+    "woffstory": {
+      "type": "string"
+    }
   },
   "validations": [],
   "relations": {},

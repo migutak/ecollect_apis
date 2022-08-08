@@ -6,7 +6,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "casenumber": {
+    "id": {
       "type": "string",
       "id": true,
       "required": true
@@ -21,68 +21,41 @@
     "custname": {
       "type": "string"
     },
-    "oustbalance": {
+    "writeoffamount": {
       "type": "number"
     },
     "rrocode": {
       "type": "string"
     },
-    "productcode": {
-      "type": "string"
-    },
-    "businessunit": {
-      "type": "string"
-    },
     "writeofftype": {
       "type": "string"
-    },
-    "writeoffamount": {
-      "type": "number"
-    },
-    "settlementamount": {
-      "type": "number"
-    },
-    "provisionamount": {
-      "type": "number"
-    },
-    "resultantbalance": {
-      "type": "number"
     },
     "writeoffstory": {
       "type": "string"
     },
-    "requestedby": {
+    "arocode": {
       "type": "string"
     },
-    "datetequested": {
-      "type": "date"
+    "requestby": {
+      "type": "string"
+    },
+    "requestdate": {
+      "type": "string"
     },
     "approved": {
       "type": "string"
     },
-    "dateapproved": {
-      "type": "date"
-    },
-    "print": {
-      "type": "string"
-    },
-    "printby": {
-      "type": "string"
-    },
-    "dateprint": {
-      "type": "date"
-    },
     "approvedby": {
       "type": "string"
     },
-    "applink": {
+    "approvaldate": {
       "type": "string"
     },
     "status": {
       "type": "string"
     },
     "lastupdatedate": {
-      "type": "date"
+      "type": "string"
     }
   },
   "validations": [],

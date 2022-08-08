@@ -7,7 +7,7 @@ module.exports = function(Tblipfcancellations) {
   Tblipfcancellations.updateipf = function(data, cb) {
     var ds = Tblipfcancellations.dataSource;
     //
-    var update_sql = "update tbl_ipf_cancellations set status = '" + data.status + "' where accnumber = '" + data.accnumber + "'";
+    var update_sql = "update tbl_ipf_cancellations set status = '" + data.status + "',paymentdate='"+data.paymentdate+"',paymentamount='"+data.paymentamount+"', loancleared='"+data.loancleared+"', checknumber='"+data.checknumber+"',datestatus='"+data.paymentdate+"', woffamount="+data.woffamount+", wofftype='"+data.wofftype+"',woffstory='"+data.woffstory+"' where accnumber = '" + data.accnumber + "'";
     ds.connector.query(update_sql, [], function(err, accounts) {
       if (err) console.error(err);
       cb(err, accounts);
