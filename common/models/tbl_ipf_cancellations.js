@@ -72,7 +72,7 @@ module.exports = function(Tblipfcancellations) {
 
   function buildSql(request) {
     const selectSql = createSelectSql(request);
-    const fromSql = ' from ecol.tbl_ipf_cancellations where status is null or status != \'Reinstatement\'  ';
+    const fromSql = ' from ecol.tbl_ipf_cancellations ';
     const whereSql = createWhereSql(request);
     const limitSql = createLimitSql(request);
 

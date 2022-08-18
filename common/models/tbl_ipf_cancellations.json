@@ -143,6 +143,9 @@
     },
     "woffstory": {
       "type": "string"
+    },
+    "followupcomment": {
+      "type": "string"
     }
   },
   "validations": [],

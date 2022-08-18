@@ -45,7 +45,7 @@ module.exports = function(Tblvaluers) {
 
         const SQL = selectSql + fromSql + whereSql + groupBySql + orderBySql + limitSql;
 
-        console.log(SQL);
+        //console.log(SQL);
 
         return SQL;
     }
